@@ -22,6 +22,8 @@ header {
 }
 
 main {
+    position: relative;
+
     .container {
         position: relative;
 
@@ -41,6 +43,30 @@ main {
 
             p {
                 line-height: 2;
+            }
+
+            .scroll-nav {
+                position: relative;
+                width: 2px;
+                height: 100px;
+                margin: auto;
+                background-color: #eaeaea;
+                margin-top: 100px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #333;
+                    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                    animation-name: flow;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
             }
         }
 
@@ -92,4 +118,24 @@ main {
             }
         }
     }
+}
+
+@keyframes flow {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    100% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+}
+
+.flow {
+    animation-name: flow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
