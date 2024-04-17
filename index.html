@@ -15,8 +15,21 @@
 <body>
     <main>
         <div class="container">
-            <section class="mock-list">
-                <a href="./hair_salon/inex.html">
+            <div class="guide">
+                <h1>Gallery</h1>
+
+                <p>
+                    作成したモックは基本的にPC版で閲覧することを想定しています。<br>
+                    モバイルで閲覧した際はレイアウトが崩れますのでご了承ください。<br>
+                </p>
+                <p>
+                    実装する際はモバイル対応はもちろんのこと、<br>
+                    パララックスエフェクトやスクロールアニメーション演出なども対応可能です。
+
+                </p>
+            </div>
+            <div class="mock-list">
+                <a href="./hair_salon/inex.html" target="_blank" class="project">
                     <div class="mock">
                         <div class="image-wrapper">
                             <img src="./images/hair_salon.png" alt="" srcset="">
@@ -27,7 +40,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="./VTuber/index.html">
+                <a href="./VTuber/index.html" target="_blank" class="project">
                     <div class="mock">
                         <div class="image-wrapper">
                             <img src="./images/vtuber.png" alt="" srcset="">
@@ -38,12 +51,25 @@
                         </div>
                     </div>
                 </a>
-            </section>
+                <a href="./photo_site/index.html" target="_blank" class="project">
+                    <div class="mock">
+                        <div class="image-wrapper">
+                            <img src="./images/photo_studio.png" alt="" srcset="">
+                        </div>
+                        <div class="mock-info">
+                            <p class="title">PhotoStudio Mock</p>
+                            <p class="text">写真館公式サイトモック作成</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

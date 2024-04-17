@@ -17,6 +17,29 @@ header .container .site-title {
   font-weight: 500;
 }
 
+main .container {
+  position: relative;
+}
+
+main .container .guide {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  margin: auto;
+  width: 50vw;
+  max-width: 600px;
+}
+
+main .container .guide h1 {
+  font-size: calc(24px + 2vw);
+  font-weight: 900;
+  margin-bottom: 5vw;
+}
+
+main .container .guide p {
+  line-height: 2;
+}
+
 main .container .mock-list {
   min-height: 100vh;
   display: -webkit-box;
@@ -27,14 +50,18 @@ main .container .mock-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 main .container .mock-list a {
   display: block;
-  width: 50%;
+  width: 100%;
   text-decoration: none;
   color: #111;
   border: 1px solid #eaeaea;
+  margin-bottom: 30px;
 }
 
 main .container .mock-list a .mock {

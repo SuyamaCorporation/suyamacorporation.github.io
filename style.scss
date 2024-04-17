@@ -23,18 +23,43 @@ header {
 
 main {
     .container {
+        position: relative;
+
+        .guide {
+            position: fixed;
+            top: 15%;
+            left: 15%;
+            margin: auto;
+            width: 50vw;
+            max-width: 600px;
+
+            h1 {
+                font-size: calc(24px + 2vw);
+                font-weight: 900;
+                margin-bottom: 5vw;
+            }
+
+            p {
+                line-height: 2;
+            }
+        }
+
         .mock-list {
             min-height: 100vh;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            padding-left: 50%;
+            padding-top: 50px;
+            padding-bottom: 50px;
 
             a {
                 display: block;
-                width: 50%;
+                width: 100%;
                 text-decoration: none;
                 color: #111;
                 border: 1px solid #eaeaea;
+                margin-bottom: 30px;
 
                 .mock {
                     width: 100%;

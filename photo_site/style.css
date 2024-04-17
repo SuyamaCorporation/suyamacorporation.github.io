@@ -1,0 +1,413 @@
+/* CommonSettings */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kaisei Decol", serif;
+  color: #333;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+button {
+  display: block;
+  border: 1px solid #dadada;
+  padding: 20px 80px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 14px;
+  background-color: #faf8f2;
+  border-radius: 50px;
+  color: #111;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 99;
+  background-color: #fff;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo span {
+  font-size: calc(16px + 1vw);
+  font-weight: 500;
+}
+
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container nav ul li {
+  list-style: none;
+  padding: 20px;
+  font-size: 14px;
+}
+
+main section {
+  position: relative;
+  padding: 10vh 0;
+  min-height: 100vh;
+}
+
+main section h1 {
+  position: relative;
+  font-size: calc(24px + 0.4vw);
+  font-weight: 400;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+main section h1 span {
+  position: absolute;
+  top: calc(24px * -1);
+  left: 0;
+  font-size: calc(14px + 0.2vw);
+  font-weight: 400;
+}
+
+main section.top .image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+main section.top .image-wrapper img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main section.top .image-wrapper img.free-text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 40%;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+main section.top .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: #faf8f2;
+  z-index: -1;
+}
+
+main section.news .container {
+  max-width: 1000px;
+}
+
+main section.news .container .post-list .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #eaeaea;
+}
+
+main section.news .container .post-list .post .post-header {
+  width: 10%;
+  aspect-ratio: 5/5;
+}
+
+main section.news .container .post-list .post .post-header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.news .container .post-list .post .post-body {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+main section.news .container .post-list .post .post-body p.post-title {
+  font-size: calc(16px + 0.2vw);
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+main section.news .container .post-list .post .post-body p.post-info {
+  font-size: calc(12px);
+}
+
+main section.news .container .post-list .post .post-body .arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-weight: 600;
+}
+
+main section.plan {
+  background-color: #faf8f2;
+}
+
+main section.plan button {
+  background-color: #fff;
+}
+
+main section.plan .container {
+  width: 1000px;
+}
+
+main section.plan .container .plan-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+main section.plan .container .plan-wrapper .plan {
+  position: relative;
+  width: 49%;
+  margin: 1px;
+  aspect-ratio: 16/10;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  padding: 20px;
+}
+
+main section.plan .container .plan-wrapper .plan h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+main section.plan .container .plan-wrapper .plan p {
+  line-height: 1.5;
+}
+
+main section.plan .container .plan-wrapper .plan .view-more {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+main section.plan .container .plan-wrapper .plan .view-more span {
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 80px;
+  margin-left: 20px;
+  background-color: #666;
+}
+
+main section.plan .container .plan-wrapper .plan .view-more span::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #666;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main section.plan .container .image-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 1;
+  -webkit-transform: translate(70%, 15%);
+          transform: translate(70%, 15%);
+}
+
+main section.plan .container .image-wrapper img {
+  aspect-ratio: 12/16;
+}
+
+main section.photo-grapher {
+  padding-top: 20vh;
+}
+
+main section.photo-grapher .container {
+  width: 1000px;
+}
+
+main section.photo-grapher .container img.icon {
+  position: absolute;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  right: 0;
+  top: 0;
+}
+
+main section.photo-grapher .container .post-list .post {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.photo-grapher .container .post-list .post .post-header {
+  width: 30%;
+}
+
+main section.photo-grapher .container .post-list .post .post-header img {
+  width: 100%;
+  aspect-ratio: 14/16;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.photo-grapher .container .post-list .post .post-body {
+  position: relative;
+  padding: 0px 20px;
+  width: 70%;
+}
+
+main section.photo-grapher .container .post-list .post .post-body p.post-title {
+  font-size: calc(16px + 0.2vw);
+  margin-bottom: 50px;
+}
+
+main section.photo-grapher .container .post-list .post .post-body p.post-text {
+  line-height: 2;
+}
+
+main section.photo-grapher .container .post-list .post .post-body .sns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main section.photo-grapher .container .post-list .post .post-body .sns svg {
+  height: 30px;
+  width: 30px;
+}
+
+main section.studio {
+  min-height: unset;
+  background-color: #faf8f2;
+}
+
+main section.studio button {
+  background-color: #fff;
+}
+
+main section.studio .image-wrapper {
+  width: 100%;
+}
+
+main section.studio .image-wrapper img {
+  width: 100%;
+  aspect-ratio: 16/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.studio .container {
+  width: 1000px;
+}
+
+main section.studio .container .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.studio .container .flex-wrapper .right-container,
+main section.studio .container .flex-wrapper .left-container {
+  width: 48%;
+  margin: auto;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+main section.studio .container .flex-wrapper .left-container p.studio-name {
+  font-size: calc(24px + 0.4vw);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+main section.studio .container .flex-wrapper .left-container p.address {
+  font-size: calc(14px + 0.2vw);
+}
+
+main section.studio .container .flex-wrapper .left-container img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 50px;
+}
+
+main section.studio .container .flex-wrapper .right-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  min-height: 20vh;
+  background-color: #fafafa;
+}
+/*# sourceMappingURL=style.css.map */
