@@ -94,6 +94,8 @@ main .container .mock-list a {
   color: #111;
   border: 1px solid #eaeaea;
   margin-bottom: 30px;
+  -webkit-box-shadow: 1px 1px 10px #33333333;
+          box-shadow: 1px 1px 10px #33333333;
 }
 
 main .container .mock-list a .mock {

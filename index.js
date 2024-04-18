@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     var projectElements = document.querySelectorAll('.project');
     projectElements.forEach(function (element) {
