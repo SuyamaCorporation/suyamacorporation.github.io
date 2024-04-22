@@ -146,6 +146,18 @@ main section .container {
   position: relative;
 }
 
+main section .container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  color: #eaeaea;
+  font-weight: 900;
+  font-size: calc(24px + 4vw);
+  z-index: 9;
+}
+
 main section.top .image-wrapper {
   position: absolute;
   top: 0;
@@ -217,13 +229,19 @@ main section.top .container #left-image {
   width: 50%;
 }
 
-main section.news .container .post-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+main section.news {
+  /*
+        swiper-settings
+        */
+}
+
+main section.news .swiper {
   width: 100%;
+  overflow: visible;
+}
+
+main section.news .container::before {
+  content: 'NEWS';
 }
 
 main section.news .container .post-list .post {
@@ -318,6 +336,10 @@ main section.works {
   padding: 20vh 2vw;
 }
 
+main section.works .container::before {
+  content: 'WORKS';
+}
+
 main section.works .post-list {
   margin-top: 50px;
   display: -webkit-box;
@@ -331,6 +353,10 @@ main section.works .post-list {
 main section.works .post-list .post {
   width: 23%;
   margin: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main section.works .post-list .post .header {

@@ -142,6 +142,18 @@ main {
 
         .container {
             position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                color: #eaeaea;
+                font-weight: 900;
+                font-size: calc(24px + 4vw);
+                z-index: 9;
+            }
         }
     }
 
@@ -210,12 +222,21 @@ main {
     }
 
     section.news {
-        .container {
-            .post-list {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
 
+        /*
+        swiper-settings
+        */
+        .swiper {
+            width: 100%;
+            overflow: visible;
+        }
+
+        .container {
+            &::before {
+                content: 'NEWS';
+            }
+
+            .post-list {
                 .post {
                     width: 48%;
                     margin: auto;
@@ -311,6 +332,12 @@ main {
     section.works {
         padding: 20vh 2vw;
 
+        .container {
+            &::before {
+                content: 'WORKS';
+            }
+        }
+
         .post-list {
             margin-top: 50px;
             display: flex;
@@ -320,6 +347,7 @@ main {
             .post {
                 width: 23%;
                 margin: auto;
+                user-select: none;
 
                 .header {
                     width: 100%;

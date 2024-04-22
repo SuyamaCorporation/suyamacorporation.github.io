@@ -11,6 +11,10 @@ function handleScroll() {
         header.classList.remove('on');
     }
 }
-
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    grabCursor: true,
+});
 // スクロールイベントに関数を紐づける
 window.addEventListener('scroll', handleScroll);
