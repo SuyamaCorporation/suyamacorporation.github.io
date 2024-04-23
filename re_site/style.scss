@@ -338,7 +338,8 @@ main {
     }
 
     section.about {
-        background-color: #33333333;
+        background-color: #0000006e;
+        padding-top: 20vh;
 
         .container {
             .flex-wrapper {
@@ -366,6 +367,8 @@ main {
                     }
 
                     .view-more {
+                        margin-top: 100px;
+
                         button {
                             border-color: #fff;
 
@@ -674,7 +677,7 @@ main {
 
     section.contact {
         min-height: unset;
-        background-color: #33333333;
+        background-color: #0000006e;
 
         * {
             color: #fff;

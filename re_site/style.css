@@ -372,7 +372,8 @@ main section.news .container::after {
 }
 
 main section.about {
-  background-color: #33333333;
+  background-color: #0000006e;
+  padding-top: 20vh;
 }
 
 main section.about .container .flex-wrapper {
@@ -402,6 +403,10 @@ main section.about .container .flex-wrapper .left-container p {
   font-weight: 900;
   line-height: 2;
   color: #fff;
+}
+
+main section.about .container .flex-wrapper .left-container .view-more {
+  margin-top: 100px;
 }
 
 main section.about .container .flex-wrapper .left-container .view-more button {
@@ -739,7 +744,7 @@ main section.recruit .container .flex-wrapper .right-container .image-wrapper im
 
 main section.contact {
   min-height: unset;
-  background-color: #33333333;
+  background-color: #0000006e;
 }
 
 main section.contact * {
