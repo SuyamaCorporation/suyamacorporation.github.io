@@ -57,7 +57,7 @@
             </div>
         </section>
         <section class="news">
-            <div class="container">
+            <div class="container animate" data-animate="fadeIn">
                 <h1 class="impact">Topics<span class="sub-title">お知らせ</span></h1>
                 <ul class="post-list">
                     <li class="post">
@@ -99,7 +99,7 @@
         <section class="about">
             <div class="container">
                 <div class="flex-wrapper">
-                    <div class="left-container">
+                    <div class="left-container animate" data-animate="fadeDown">
                         <h1>わたしたちの約束<span class="impact sub-title">Policy</span></h1>
 
                         <p>
@@ -113,7 +113,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="right-container">
+                    <div class="right-container animate" data-animate="fadeIn" data-delay="1s">
                         <div class="theme">
                             <h2 class="impact">Mission</h2>
                             <p>世界をやる気で満たしていく</p>
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right-container">
+                    <div class="right-container animate" data-animate="fadeIn">
                         <div class="image-wrapper">
                             <img src="./images/AdobeStock_500814479.jpeg" alt="">
                         </div>
@@ -201,7 +201,7 @@
         <section class="voice">
             <div class="container">
                 <h1 class="impact">Performance<span class="sub-title">活動実績</span></h1>
-                <div class="swiper">
+                <div class="swiper animate" data-animate="fadeIn">
                     <div class="post-list swiper-wrapper">
                         <div class="post swiper-slide">
                             <div class="post-header">
@@ -298,12 +298,21 @@
             <div class="container">
                 <h1 class="impact">Recruit <span class="sub-title">採用情報</span></h1>
                 <div class="flex-wrapper">
-                    <div class="left-container">
+                    <div class="left-container animate" data-animate="fadeIn">
                         <div class="image-wrapper">
                             <img src="./images/AdobeStock_575955811.jpeg" alt="">
                         </div>
                     </div>
-                    <div class="right-container">
+                    <div class="right-container animate" data-animate="fadeIn">
+                        <p>
+                            私たちは、<br>
+                            一人ひとりが自己の力を最大限に発揮し、<br>
+                            共に成長し合うことで、<br>より良い未来を築いていくことを目指しています。<br>
+                            私たちのビジョンに共感し、<br>一緒に成長していく仲間をお待ちしています。
+                        </p>
+                        <div class="end">
+                            <span>代表取締役 ◯◯◯◯</span>
+                        </div>
                         <div class="card">
                             <h2>新卒採用</h2>
                             <button>
@@ -366,6 +375,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../luxy.js"></script>
+    <script src="../scroll.js"></script>
     <script src="./index.js"></script>
 </body>
 

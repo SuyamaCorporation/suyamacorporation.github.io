@@ -620,7 +620,7 @@ main {
                         width: 100%;
                         position: relative;
                         background-color: #fff;
-                        padding: 4vw;
+                        padding: 3vw;
                         transition: .5s;
                         cursor: pointer;
                         border-bottom: 1px solid #eaeaea;
@@ -679,6 +679,39 @@ main {
                             aspect-ratio: 6/8;
                             object-fit: cover;
                             object-position: top;
+                        }
+                    }
+
+                    p {
+                        line-height: 2;
+                        font-weight: 600;
+                        font-size: calc(14px + 0.2vw);
+                    }
+
+                    .end {
+                        margin: 30px 0px;
+                        width: 100%;
+                        text-align: right;
+
+                        span {
+                            position: relative;
+                            display: inline-block;
+                            width: max-content;
+                            font-weight: 400;
+                            font-size: calc(12px + 0.2vw);
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: calc(-2vw + -10px);
+                                display: block;
+                                width: 2vw;
+                                height: 1px;
+                                margin: auto;
+                                background-color: #9c9c9c;
+                            }
                         }
                     }
                 }
@@ -771,6 +804,13 @@ main {
     }
 }
 
+/*
+animation-settings
+*/
+.animate {
+    opacity: 0;
+}
+
 @keyframes imageScroll {
     0% {
         transform: translate(0%, 0%);
@@ -787,6 +827,7 @@ main {
     }
 
     100% {
+        opacity: 1;
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     }
 }
@@ -805,14 +846,50 @@ main {
     }
 
     100% {
+        opacity: 1;
         clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
     }
 }
+
 
 .fadeLeft {
     clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
     animation-name: fadeLeft;
     animation-delay: 1.5s;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeDown {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    100% {
+        clip-path: polygon(-10% -10%, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+.fadeDown {
+    animation-name: fadeDown;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }

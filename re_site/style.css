@@ -679,7 +679,7 @@ main section.recruit .container .flex-wrapper .right-container .card {
   width: 100%;
   position: relative;
   background-color: #fff;
-  padding: 4vw;
+  padding: 3vw;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
@@ -753,6 +753,45 @@ main section.recruit .container .flex-wrapper .right-container .image-wrapper im
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+main section.recruit .container .flex-wrapper .left-container p,
+main section.recruit .container .flex-wrapper .right-container p {
+  line-height: 2;
+  font-weight: 600;
+  font-size: calc(14px + 0.2vw);
+}
+
+main section.recruit .container .flex-wrapper .left-container .end,
+main section.recruit .container .flex-wrapper .right-container .end {
+  margin: 30px 0px;
+  width: 100%;
+  text-align: right;
+}
+
+main section.recruit .container .flex-wrapper .left-container .end span,
+main section.recruit .container .flex-wrapper .right-container .end span {
+  position: relative;
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 400;
+  font-size: calc(12px + 0.2vw);
+}
+
+main section.recruit .container .flex-wrapper .left-container .end span::before,
+main section.recruit .container .flex-wrapper .right-container .end span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(-2vw + -10px);
+  display: block;
+  width: 2vw;
+  height: 1px;
+  margin: auto;
+  background-color: #9c9c9c;
 }
 
 main section.contact {
@@ -846,6 +885,13 @@ main section.contact .container .flex-wrapper .right-container ul li span {
   font-weight: 400;
 }
 
+/*
+animation-settings
+*/
+.animate {
+  opacity: 0;
+}
+
 @-webkit-keyframes imageScroll {
   0% {
     -webkit-transform: translate(0%, 0%);
@@ -874,6 +920,7 @@ main section.contact .container .flex-wrapper .right-container ul li span {
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
   100% {
+    opacity: 1;
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
             clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   }
@@ -885,6 +932,7 @@ main section.contact .container .flex-wrapper .right-container ul li span {
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
   100% {
+    opacity: 1;
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
             clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   }
@@ -909,6 +957,7 @@ main section.contact .container .flex-wrapper .right-container ul li span {
             clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
   }
   100% {
+    opacity: 1;
     -webkit-clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
             clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
   }
@@ -920,6 +969,7 @@ main section.contact .container .flex-wrapper .right-container ul li span {
             clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
   }
   100% {
+    opacity: 1;
     -webkit-clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
             clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
   }
@@ -934,6 +984,65 @@ main section.contact .container .flex-wrapper .right-container ul li span {
           animation-delay: 1.5s;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeDown {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    -webkit-clip-path: polygon(-10% -10%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(-10% -10%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    -webkit-clip-path: polygon(-10% -10%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(-10% -10%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.fadeDown {
+  -webkit-animation-name: fadeDown;
+          animation-name: fadeDown;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
