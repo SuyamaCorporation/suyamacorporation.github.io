@@ -398,6 +398,11 @@ main section.about .container .flex-wrapper .left-container h1 {
   border-bottom: 1px solid #fff;
 }
 
+main section.about .container .flex-wrapper .left-container h1 span {
+  font-weight: 400;
+  font-size: calc(14px + 0.6vw);
+}
+
 main section.about .container .flex-wrapper .left-container p {
   font-size: calc(16px + 0.4vw);
   font-weight: 900;
@@ -411,6 +416,10 @@ main section.about .container .flex-wrapper .left-container .view-more {
 
 main section.about .container .flex-wrapper .left-container .view-more button {
   border-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 50px;
 }
 
 main section.about .container .flex-wrapper .left-container .view-more button span {
@@ -420,6 +429,10 @@ main section.about .container .flex-wrapper .left-container .view-more button sp
 
 main section.about .container .flex-wrapper .left-container .view-more button::before {
   display: none;
+}
+
+main section.about .container .flex-wrapper .left-container .view-more button:hover {
+  background-color: #ffffff36;
 }
 
 main section.about .container .flex-wrapper .right-container .theme {
@@ -776,7 +789,7 @@ main section.contact .container .flex-wrapper .left-container p {
 main section.contact .container .flex-wrapper .left-container button {
   display: block;
   padding: 10px 75px;
-  font-size: calc(14px + 0.4vw);
+  font-size: calc(12px + 0.2vw);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -788,6 +801,14 @@ main section.contact .container .flex-wrapper .left-container button {
   margin: auto;
   margin-top: 25px;
   cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 900;
+  border-radius: 50px;
+}
+
+main section.contact .container .flex-wrapper .left-container button:hover {
+  background-color: #ffffff36;
 }
 
 main section.contact .container .flex-wrapper .right-container p {

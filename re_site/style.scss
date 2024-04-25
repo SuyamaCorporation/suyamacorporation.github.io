@@ -357,6 +357,11 @@ main {
                         margin-bottom: 100px;
                         color: #fff;
                         border-bottom: 1px solid #fff;
+
+                        span {
+                            font-weight: 400;
+                            font-size: calc(14px + 0.6vw);
+                        }
                     }
 
                     p {
@@ -371,6 +376,9 @@ main {
 
                         button {
                             border-color: #fff;
+                            background-color: rgba(255, 255, 255, 0);
+                            transition: .5s;
+                            border-radius: 50px;
 
                             span {
                                 color: #fff;
@@ -380,6 +388,10 @@ main {
                             &::before {
                                 display: none;
                             }
+                        }
+
+                        button:hover {
+                            background-color: #ffffff36;
                         }
                     }
                 }
@@ -705,7 +717,7 @@ main {
                     button {
                         display: block;
                         padding: 10px 75px;
-                        font-size: calc(14px + 0.4vw);
+                        font-size: calc(12px + 0.2vw);
                         width: max-content;
                         height: max-content;
                         border: 1px solid #fff;
@@ -713,6 +725,13 @@ main {
                         margin: auto;
                         margin-top: 25px;
                         cursor: pointer;
+                        transition: .5s;
+                        font-weight: 900;
+                        border-radius: 50px;
+                    }
+
+                    button:hover {
+                        background-color: #ffffff36;
                     }
                 }
 
