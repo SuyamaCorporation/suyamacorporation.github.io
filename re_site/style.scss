@@ -126,13 +126,27 @@ header {
 body {
     position: relative;
 
-    .bg-wrapper {
+    .load {
         position: fixed;
         top: 0;
         left: 0;
+        width: 100vw;
+        height: 100vw;
+        margin: auto;
+        background-color: #111;
+        z-index: 999;
+    }
+
+    .bg-wrapper {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         z-index: -1;
         width: 100vw;
         height: 100vh;
+        margin: auto;
 
         video {
             width: 100%;
@@ -379,6 +393,7 @@ main {
                             background-color: rgba(255, 255, 255, 0);
                             transition: .5s;
                             border-radius: 50px;
+                            background-color: #ffffff36;
 
                             span {
                                 color: #fff;
@@ -755,12 +770,12 @@ main {
                         height: max-content;
                         border: 1px solid #fff;
                         background-color: unset;
-                        margin: auto;
                         margin-top: 25px;
                         cursor: pointer;
                         transition: .5s;
                         font-weight: 900;
                         border-radius: 50px;
+                        background-color: #ffffff36;
                     }
 
                     button:hover {

@@ -143,13 +143,27 @@ body {
   position: relative;
 }
 
-body .bg-wrapper {
+body .load {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vw;
+  margin: auto;
+  background-color: #111;
+  z-index: 999;
+}
+
+body .bg-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
   width: 100vw;
   height: 100vh;
+  margin: auto;
 }
 
 body .bg-wrapper video {
@@ -420,6 +434,7 @@ main section.about .container .flex-wrapper .left-container .view-more button {
   -webkit-transition: .5s;
   transition: .5s;
   border-radius: 50px;
+  background-color: #ffffff36;
 }
 
 main section.about .container .flex-wrapper .left-container .view-more button span {
@@ -837,13 +852,13 @@ main section.contact .container .flex-wrapper .left-container button {
   height: max-content;
   border: 1px solid #fff;
   background-color: unset;
-  margin: auto;
   margin-top: 25px;
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
   font-weight: 900;
   border-radius: 50px;
+  background-color: #ffffff36;
 }
 
 main section.contact .container .flex-wrapper .left-container button:hover {
