@@ -8,6 +8,13 @@
   color: #333;
 }
 
+span.price {
+  font-family: "Anton", sans-serif;
+  font-weight: 400 !important;
+  font-style: italic;
+  color: #fa709a;
+}
+
 .container {
   position: relative;
   max-width: 1260px;
@@ -84,7 +91,8 @@ header .container .logo img {
 }
 
 header .container .logo span {
-  font-weight: 300;
+  font-family: "Anton";
+  font-weight: 400;
   color: #fff;
   font-size: calc(10px + 0.8vw);
   padding-left: 10px;
@@ -1431,6 +1439,110 @@ main.plan section.plan .option .point .view-more {
   margin-top: 20px;
 }
 
+/* support page */
+main.support section.support .container .support {
+  display: block;
+}
+
+main.support section.support .container .support h2 {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main.support section.support .container .support h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+main.support section.support .container .support .left-container,
+main.support section.support .container .support .right-container {
+  width: 100%;
+}
+
+main.support section.support .container .support .left-container p span {
+  color: #fa709a;
+}
+
+main.support section.support .container .support .right-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main.support section.support .container .support .right-container .item {
+  width: 49%;
+  min-width: 300px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 25px;
+}
+
+main.support section.support .container .support .right-container .item .head {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+main.support section.support .container .support .right-container .item .head svg {
+  height: 30px;
+  margin: 0px 10px;
+  margin-top: 4px;
+}
+
+main.support section.support .container .support .right-container .item .head h3 {
+  font-weight: 500;
+  font-size: calc(16px + 0.2vw);
+  margin-left: 10px;
+}
+
+main.support section.support .container .support .right-container .item .body {
+  padding: 10px 20px;
+}
+
+main.support section.support .container .support .right-container .item .body p {
+  margin-bottom: 0px;
+}
+
+main.support section.support .container .support .right-container .item .body p span {
+  color: #fa709a;
+}
+
+main.support section.support .container .support .right-container .item.price {
+  border: 0px solid #eaeaea;
+  border-bottom-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.support section.support .container .support .right-container .item.price .body p {
+  font-size: calc(22px + 0.4vw);
+  font-weight: 900;
+}
+
+main.support section.support .container .support .right-container .item.price .body p.price {
+  width: 100%;
+  text-align: right;
+}
+
+main.support section.support .container .support .right-container .item.price .body p.price span.price {
+  font-size: calc(24px + 1vw);
+  margin-right: 10px;
+}
+
 footer {
   min-height: 30vh;
   padding: calc(50px + 5vh) 0;
@@ -1462,8 +1574,9 @@ footer .container .right-container {
 }
 
 footer .container .left-container p.service {
+  font-family: "Anton";
   font-size: calc(12px + 1.8vw);
-  font-weight: 900;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 

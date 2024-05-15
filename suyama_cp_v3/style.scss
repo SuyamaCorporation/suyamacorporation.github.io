@@ -6,6 +6,13 @@
     color: #333;
 }
 
+span.price {
+    font-family: "Anton", sans-serif;
+    font-weight: 400 !important;
+    font-style: italic;
+    color: #fa709a;
+}
+
 .container {
     position: relative;
     max-width: 1260px;
@@ -62,7 +69,8 @@ header {
             }
 
             span {
-                font-weight: 300;
+                font-family: "Anton";
+                font-weight: 400;
                 color: #fff;
                 font-size: calc(10px + 0.8vw);
                 padding-left: 10px;
@@ -1338,6 +1346,113 @@ main.plan {
     }
 }
 
+/* support page */
+main.support {
+    section.support {
+        .container {
+            .support {
+                display: block;
+
+                h2 {
+                    position: relative;
+                    width: max-content;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 3px;
+                        width: 100%;
+                        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                    }
+                }
+
+                .left-container,
+                .right-container {
+                    width: 100%;
+                }
+
+                .left-container {
+                    p {
+                        span {
+                            color: #fa709a;
+                        }
+                    }
+                }
+
+                .right-container {
+                    justify-content: space-around;
+
+                    .item {
+                        width: 49%;
+                        min-width: 300px;
+                        border: 1px solid #eaeaea;
+                        margin-bottom: 25px;
+
+                        .head {
+                            width: 100%;
+                            margin: 0px;
+                            padding: 10px 0px;
+                            border-bottom: 1px solid #eaeaea;
+
+                            svg {
+                                height: 30px;
+                                margin: 0px 10px;
+                                margin-top: 4px;
+                            }
+
+                            h3 {
+                                font-weight: 500;
+                                font-size: calc(16px + 0.2vw);
+                                margin-left: 10px;
+                            }
+                        }
+
+                        .body {
+                            padding: 10px 20px;
+
+                            p {
+                                margin-bottom: 0px;
+
+                                span {
+                                    color: #fa709a;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .item.price {
+                        border: 0px solid #eaeaea;
+                        border-bottom-width: 1px;
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+
+                        .body {
+                            p {
+                                font-size: calc(22px + 0.4vw);
+                                font-weight: 900;
+                            }
+
+                            p.price {
+                                width: 100%;
+                                text-align: right;
+
+                                span.price {
+                                    font-size: calc(24px + 1vw);
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 footer {
     min-height: 30vh;
     padding: calc(50px + 5vh) 0;
@@ -1361,8 +1476,9 @@ footer {
 
         .left-container {
             p.service {
+                font-family: "Anton";
                 font-size: calc(12px + 1.8vw);
-                font-weight: 900;
+                font-weight: 400;
                 margin-bottom: 10px;
             }
 
