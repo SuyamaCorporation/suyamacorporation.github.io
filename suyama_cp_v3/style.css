@@ -18,7 +18,7 @@ span.price {
 .container {
   position: relative;
   max-width: 1260px;
-  width: 95vw;
+  width: 90vw;
   margin: auto;
 }
 
@@ -45,6 +45,21 @@ span.price {
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+@media (max-width: 700px) {
+  .contact-btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-btn {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 25px;
+  }
 }
 
 .contact-btn:hover {
@@ -126,13 +141,136 @@ header.on .container nav ul li {
   color: #333;
 }
 
+@media (max-width: 1040px) {
+  section h1 {
+    font-size: calc(16px + 0.4vw) !important;
+  }
+  section p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  main .off-mobile {
+    display: none !important;
+  }
+  main .left-container {
+    width: 100% !important;
+  }
+  main .right-container {
+    width: 100% !important;
+  }
+  main section h1 {
+    font-size: calc(16px + 0.8vw) !important;
+  }
+  main section p {
+    font-size: 12px;
+  }
+  main section.nav .view-more {
+    width: 45%;
+  }
+  main .view-more {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .on-mobile {
+    display: block !important;
+  }
+  .guide {
+    bottom: 0 !important;
+    width: 100%;
+  }
+  .guide button {
+    width: 50% !important;
+  }
+  main .page-title h1 span {
+    font-size: 22px !important;
+  }
+  main section {
+    padding: calc(25px + 5vh) 0 !important;
+  }
+  main section.nav .view-more {
+    width: 100%;
+  }
+  main section.contact .button-wrapper button {
+    margin: auto !important;
+  }
+  main.page h2 {
+    font-size: 22px !important;
+  }
+  main.page h3 {
+    font-size: 16px !important;
+  }
+  main.page section.spec .container .spec-wrapper .spec .image-wrapper {
+    height: 250px !important;
+  }
+  main.page section.spec .container .spec-wrapper .spec .body h2 {
+    font-size: 16px !important;
+  }
+  main.page section.plan .container .tab h2 span {
+    font-size: 16px !important;
+    letter-spacing: 0px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row {
+    width: 95% !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .label {
+    font-size: 12px !important;
+    min-width: 130px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text {
+    text-align: right;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text svg {
+    height: 20px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text span {
+    font-size: 15px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan ul.target li {
+    font-size: 12px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan ul.example li {
+    font-size: 12px !important;
+  }
+  main.page section.plan .container .option .option .label span,
+  main.page section.plan .container .example .option .label span {
+    font-size: 12px !important;
+  }
+  main.page section.nav .container h2 {
+    font-size: 22px !important;
+  }
+  main.page section.support .container .support {
+    padding: 10px !important;
+  }
+  main.page section.support .container .support .right-container .tag svg {
+    height: 20px !important;
+    margin: 0px !important;
+    margin-top: 0px !important;
+  }
+  main.page section.flow .container .step .head h2 {
+    font-size: 14px !important;
+  }
+}
+
 main {
   position: relative;
 }
 
+main .on-mobile {
+  display: none;
+}
+
 main .page-title {
   padding: 2vw 0;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   background-image: repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 14px);
 }
 
@@ -237,7 +375,7 @@ main section .view-more:hover p {
 }
 
 main section.bg-border {
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   background-image: repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 14px);
 }
 
@@ -370,14 +508,18 @@ main section.reason .container {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main section.reason .container .left-container {
   width: 50%;
+  min-width: 300px;
 }
 
 main section.reason .container .right-container {
   width: 50%;
+  min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,6 +539,16 @@ main section.reason .container .right-container .image-wrapper img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  main section.reason .container .right-container {
+    width: 100%;
+  }
+  main section.reason .container .right-container .image-wrapper {
+    max-width: 300px;
+    margin: auto;
+  }
 }
 
 main section.reason .container h1 {
@@ -485,7 +637,22 @@ main section.point .container .wrapper .point {
   background-color: #fff;
   border-radius: 15px;
   width: 30%;
+  min-width: 300px;
   margin: 10px;
+  border: 1px solid #eaeaea;
+}
+
+@media (max-width: 712px) {
+  main section.point .container .wrapper .point {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  main section.point .container .wrapper .point {
+    width: 100%;
+  }
 }
 
 main section.point .container .wrapper .point .image {
@@ -614,7 +781,7 @@ main section.plan .container .plan-wrapper .plan-table .row .col.head {
 main section.plan .container .plan-wrapper .plan-table .row .col.label {
   font-weight: 900;
   text-align: left;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   padding-left: 10px;
   min-width: 100px;
 }
@@ -669,7 +836,7 @@ main section.plan .container .example .option {
 
 main section.plan .container .option .option .label,
 main section.plan .container .example .option .label {
-  background-color: #fafafa;
+  background-color: #f8f8f8;
 }
 
 main section.plan .container .option .option .label span,
@@ -771,7 +938,7 @@ main section.support .container .support .right-container .tag {
       -ms-flex-align: center;
           align-items: center;
   min-width: 75px;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -803,7 +970,7 @@ main section.flow .container h1::after {
   right: 0;
   font-size: calc(10px + 8vw);
   font-weight: 900;
-  color: #fafafa;
+  color: #f8f8f8;
   z-index: -1;
 }
 
@@ -819,7 +986,8 @@ main section.flow .container .step .head {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #eaeaea;
 }
 
 main section.flow .container .step .head .label {
@@ -1030,7 +1198,7 @@ main.page {
 
 main.page section.nav {
   min-height: unset;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
 }
 
 main.page section.nav .container h2 {
@@ -1193,7 +1361,7 @@ main.spec section.spec .container .spec-wrapper .spec .body h2 {
   font-weight: 700;
   margin-bottom: 25px;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   padding: 5px 0px;
 }
 
@@ -1242,7 +1410,7 @@ main.plan section.plan .container .tab h2 span {
 }
 
 main.plan section.plan .container .tab h2.off {
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   border-bottom-width: 1px;
 }
 
@@ -1338,7 +1506,7 @@ main.plan section.plan .container .plan-wrapper .plan .wrapper .row {
 
 main.plan section.plan .container .plan-wrapper .plan .wrapper .row .label {
   font-weight: 600;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   padding: 15px 20px;
   min-width: 120px;
   border-right: 1px solid #eaeaea;
@@ -1410,7 +1578,7 @@ main.plan section.plan .container .plan-wrapper .plan ul.example li {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   font-weight: 600;
   padding: 5px;
   margin: 5px;
@@ -1439,7 +1607,7 @@ main.plan section.plan .option .point .view-more {
   margin-top: 20px;
 }
 
-/* support page */
+/* サポート内容 */
 main.support section.support .container .support {
   display: block;
 }
@@ -1543,6 +1711,88 @@ main.support section.support .container .support .right-container .item.price .b
   margin-right: 10px;
 }
 
+/* ご依頼の流れ */
+/* よくあるご質問 */
+main.question section.question {
+  padding-top: 25px;
+}
+
+main.question section.question .container h2 {
+  position: relative;
+  font-size: calc(24px + 0.4vw);
+  font-weight: 900;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10px;
+}
+
+main.question section.question .container h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#ed7790));
+  background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+}
+
+main.question section.question .container .wrapper {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+main.question section.question .container .wrapper .question h3 {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 3ch;
+}
+
+main.question section.question .container .wrapper .question h3::before {
+  content: 'Q.';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: 900;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: block;
+  margin: auto;
+  color: #8f8f8f;
+}
+
+main.question section.question .container .wrapper .answer p {
+  position: relative;
+  padding-left: 3ch;
+  line-height: 2;
+}
+
+main.question section.question .container .wrapper .answer p::before {
+  content: 'A.';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fa709a;
+}
+
 footer {
   min-height: 30vh;
   padding: calc(50px + 5vh) 0;
@@ -1573,6 +1823,20 @@ footer .container .right-container {
   width: 50%;
 }
 
+@media (max-width: 700px) {
+  footer .container .left-container,
+  footer .container .right-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .container .left-container *,
+  footer .container .right-container * {
+    font-size: 12px !important;
+  }
+}
+
 footer .container .left-container p.service {
   font-family: "Anton";
   font-size: calc(12px + 1.8vw);
@@ -1580,10 +1844,22 @@ footer .container .left-container p.service {
   margin-bottom: 10px;
 }
 
+@media (max-width: 450px) {
+  footer .container .left-container p.service {
+    font-size: 22px !important;
+  }
+}
+
 footer .container .left-container p.corp {
   font-size: calc(10px + 0.6vw);
   font-weight: 300;
   margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  footer .container .left-container p.corp {
+    font-size: 18px !important;
+  }
 }
 
 footer .container ul {
@@ -1600,6 +1876,12 @@ footer .container ul li {
   padding: 10px 0px;
   width: 25%;
   min-width: 150px;
+}
+
+@media (max-width: 450px) {
+  footer .container ul li {
+    width: 50% !important;
+  }
 }
 
 footer .container p.copy {
