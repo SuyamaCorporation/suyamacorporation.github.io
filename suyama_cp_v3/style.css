@@ -2091,4 +2091,445 @@ main.support section.support .container .support .right-container .item.price .b
     font-size: 14px !important;
   }
 }
+
+main.contact section.contact-form {
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#dfe9f3), to(white));
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+main.contact section.contact-form .container {
+  background-color: #fff;
+  max-width: 650px;
+  padding: 50px;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+}
+
+@media (max-width: 450px) {
+  main.contact section.contact-form .container {
+    padding: 25px;
+  }
+}
+
+main.contact section.contact-form .container p.sub-text {
+  line-height: 2;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+main.contact section.contact-form .container p.sub-text span {
+  color: #fa709a;
+}
+
+main.contact section.contact-form .container form .row {
+  margin-bottom: 20px;
+}
+
+main.contact section.contact-form .container form .row label {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  main.contact section.contact-form .container form .row label {
+    font-size: 14px;
+  }
+}
+
+main.contact section.contact-form .container form .row label span {
+  background-color: #fa709a;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+main.contact section.contact-form .container form .row input,
+main.contact section.contact-form .container form .row textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  padding: 10px 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+main.contact section.contact-form .container form .row textarea {
+  font-size: 12px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+main.contact section.contact-form .container form .row p.confirm {
+  font-weight: 500;
+  line-height: 2;
+  font-size: 14px;
+}
+
+main.contact section.contact-form .container form .row p.confirm a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+main.contact section.contact-form .container form .row .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  main.contact section.contact-form .container form .row .item {
+    margin-left: 0px;
+  }
+}
+
+main.contact section.contact-form .container form .row .item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  margin-bottom: 0px;
+  cursor: pointer;
+  /* カスタムチェックボックスのスタイル */
+  /* チェックマークのスタイル */
+  /* チェックされたときのスタイル */
+}
+
+main.contact section.contact-form .container form .row .item label span {
+  padding: 0px;
+  margin: 0px;
+}
+
+main.contact section.contact-form .container form .row .item label input[type="checkbox"] {
+  display: none;
+}
+
+main.contact section.contact-form .container form .row .item label .custom-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 2px solid #8f8f8f;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+main.contact section.contact-form .container form .row .item label .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  border: solid #fa709a;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+
+main.contact section.contact-form .container form .row .item label input[type="checkbox"]:checked + .custom-checkbox::after {
+  display: block;
+}
+
+main.contact section.contact-form .container form input.contact-btn {
+  padding: 10px 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main.contact section.contact-form::before {
+  content: '';
+  position: absolute;
+  top: -7.5vw;
+  left: -7.5vw;
+  display: block;
+  height: 15vw;
+  width: 15vw;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+main.contact section.contact-form::after {
+  content: '';
+  position: absolute;
+  bottom: -15vw;
+  right: -15vw;
+  display: block;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+main.column-list .page-title {
+  text-align: center;
+}
+
+main.column-list section.column-list {
+  padding-top: 25px;
+}
+
+main.column-list section.column-list .container .top-bar {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+main.column-list section.column-list .container .top-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main.column-list section.column-list .container .top-bar ul li {
+  position: relative;
+  width: 25%;
+  min-width: 160px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 20px;
+  text-align: center;
+  color: #888;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  main.column-list section.column-list .container .top-bar ul li {
+    font-size: 14px;
+    width: 50%;
+  }
+}
+
+main.column-list section.column-list .container .top-bar ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #f5f5f5;
+}
+
+main.column-list section.column-list .container .top-bar ul li.on {
+  color: #333;
+  font-weight: 500;
+}
+
+main.column-list section.column-list .container .top-bar ul li.on::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: unset;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed6ea0), to(#ec8c69));
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+main.column-list section.column-list .container .post-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: auto;
+}
+
+main.column-list section.column-list .container .post-list .post {
+  position: relative;
+  width: 30%;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  min-width: 300px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  main.column-list section.column-list .container .post-list .post {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+}
+
+main.column-list section.column-list .container .post-list .post .category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed6ea0), to(#ec8c69));
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  padding: 5px 10px;
+  z-index: 9;
+}
+
+main.column-list section.column-list .container .post-list .post .category span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+main.column-list section.column-list .container .post-list .post .category span svg {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+main.column-list section.column-list .container .post-list .post .image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+main.column-list section.column-list .container .post-list .post .image-wrapper img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main.column-list section.column-list .container .post-list .post .post-body {
+  padding: 10px;
+}
+
+main.column-list section.column-list .container .post-list .post .post-body h2 {
+  font-size: 16px !important;
+  font-weight: 900;
+  padding: 10px 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  text-decoration: underline;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main.column-list section.column-list .container .post-list .post .post-body p {
+  position: relative;
+  padding: 10px 0px;
+  height: 155px;
+  font-size: 12px;
+  line-height: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main.column-list section.column-list .container .post-list .post .post-body span {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.column-list section.column-list .container .post-list .post .post-body span svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+main.column-list section.column-list .container .post-list .post:hover .image-wrapper img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main.column-list section.column-list .container .post-list .post:hover .post-body h2 {
+  color: #fa709a;
+}
+
+main.column-list section.column-list .container .pagination {
+  margin-top: 25px;
+  width: 100%;
+}
+
+main.column-list section.column-list .container .pagination ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+
+main.column-list section.column-list .container .pagination ul li {
+  list-style: none;
+  margin-right: 5px;
+}
+
+main.column-list section.column-list .container .pagination ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #eaeaea;
+  font-weight: 900;
+}
+
+main.column-list section.column-list .container .pagination ul li span svg {
+  height: 30px;
+  width: 30px;
+}
+
+main.column-list section.column-list .container .pagination ul li span.on {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed6ea0), to(#ec8c69));
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+main.column-list section.column-list .container .pagination ul::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fa709a;
+}
 /*# sourceMappingURL=style.css.map */

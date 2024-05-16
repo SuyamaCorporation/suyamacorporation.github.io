@@ -24,7 +24,7 @@ main.spec {
                     width: 2px;
                     height: 50px;
                     margin: auto;
-                    background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #ed7790 100%);
                     transform: rotate(-45deg);
                 }
 

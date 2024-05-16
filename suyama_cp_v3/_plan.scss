@@ -21,7 +21,7 @@ main.plan {
                         font-size: calc(10px + 0.8vw);
                         font-weight: 600;
                         letter-spacing: 2px;
-                        color: #fa709a
+                        color: $impact-color
                     }
 
                     cursor: pointer;
@@ -73,7 +73,7 @@ main.plan {
 
                     select {
                         padding: 10px 15px;
-                        border: 0px solid #fa709a;
+                        border: 0px solid $impact-color;
                         border-radius: 0px;
                         border-bottom-width: 1px;
                         font-size: calc(12px + 0.6vw);
@@ -185,7 +185,7 @@ main.plan {
                         font-size: 14px;
 
                         span {
-                            color: #fa709a;
+                            color: $impact-color;
                         }
                     }
                 }

@@ -22,7 +22,7 @@ main.question {
                     width: 4px;
                     height: 100%;
                     display: block;
-                    background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #ed7790 100%);
                 }
             }
 
@@ -88,7 +88,7 @@ main.question {
                             left: 0;
                             font-size: 18px;
                             font-weight: 900;
-                            color: #fa709a;
+                            color: $impact-color;
 
                             @media (max-width: $small) {
                                 top: 0;

@@ -12,7 +12,7 @@ span.price {
     font-family: "Anton", sans-serif;
     font-weight: 400 !important;
     font-style: italic;
-    color: #fa709a;
+    color: $impact-color;
 }
 
 .container {
@@ -158,7 +158,7 @@ main {
                     left: 0;
                     height: 3px;
                     width: 100%;
-                    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
                 }
             }
         }
@@ -211,7 +211,7 @@ main {
                 display: inline-block;
                 height: 30px;
                 width: 30px;
-                background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
                 clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
                 margin-right: 10px;
                 transition: .5s;
@@ -308,7 +308,7 @@ main {
 
                 span {
                     font-size: calc(42px + 2.4vw);
-                    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
                     -webkit-background-clip: text;
                     /* Webkit ベンダープレフィックス */
                     background-clip: text;
@@ -406,7 +406,7 @@ main {
                 }
 
                 span {
-                    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
                     -webkit-background-clip: text;
                     /* Webkit ベンダープレフィックス */
                     background-clip: text;
@@ -470,7 +470,7 @@ main {
                     left: 0;
                     height: 3px;
                     width: 100%;
-                    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
                 }
             }
 
@@ -543,7 +543,7 @@ main {
                 text-align: center;
                 width: 100%;
                 margin: auto;
-                background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
                 color: #fff;
                 padding: 12px;
 
@@ -554,7 +554,7 @@ main {
                     left: 0;
                     height: 3px;
                     width: 100%;
-                    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
                 }
             }
 
@@ -737,7 +737,7 @@ main {
                     left: 0;
                     height: 100%;
                     width: 4px;
-                    background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #ed7790 100%);
                 }
             }
 
@@ -865,7 +865,7 @@ main {
                         padding: 15px 30px;
                         height: max-content;
                         color: #fff;
-                        background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+                        background-image: linear-gradient(to right, $impact-color 0%, #ed7790 100%);
                     }
 
                     h2 {
@@ -985,7 +985,7 @@ main {
                     width: 2px;
                     height: 50px;
                     margin: auto;
-                    background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+                    background-image: linear-gradient(to right, $impact-color 0%, #ed7790 100%);
                     transform: rotate(-45deg);
 
                     @media (max-width:$small) {
@@ -1190,3 +1190,5 @@ footer {
 @import 'spec';
 @import 'support';
 @import 'responsive';
+@import 'contact';
+@import 'column_list';
