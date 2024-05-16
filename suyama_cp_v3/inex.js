@@ -10,15 +10,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // イベントハンドラ定義部分
     window.addEventListener('scroll', handleScroll);
 
-    selectElement.addEventListener('change', handleSelectChange);
-
     headings.forEach(heading => {
         heading.addEventListener('click', handleHeadingClick);
     });
 
     // 初期選択状態に対して処理を実行するためにchangeイベントを発火
-    const event = new Event('change');
-    selectElement.dispatchEvent(event);
+
+    if (mainTag.classList.contains('plan')) {
+        const event = new Event('change');
+        selectElement.dispatchEvent(event);
+        selectElement.addEventListener('change', handleSelectChange);
+
+    }
 
     handleScroll();
 

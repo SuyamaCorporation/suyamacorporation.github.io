@@ -113,20 +113,20 @@ main.column {
 
                     @media(max-width: $small) {
                         h1 {
-                            font-size: 22px;
+                            font-size: 22px !important;
                         }
 
                         h2 {
-                            font-size: 16px;
+                            font-size: 16px !important;
                         }
 
                         h3 {
-                            font-size: 14px;
+                            font-size: 14px !important;
                         }
 
                         h4,
                         h5 {
-                            font-size: 12px;
+                            font-size: 12px !important;
                         }
                     }
 
