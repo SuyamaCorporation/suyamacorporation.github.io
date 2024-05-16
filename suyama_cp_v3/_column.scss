@@ -1,0 +1,202 @@
+main.column {
+    .page-title {
+        .container {
+            .category {
+                display: flex;
+                margin-top: 25px;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-right: 25px;
+                    color: #898989;
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.column {
+        padding-top: 25px;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .post {
+                width: 65%;
+                min-width: 320px;
+                margin-right: auto;
+
+                @media (max-width:$small) {
+                    width: 100%;
+                }
+
+                .eye-catch {
+                    width: 100%;
+                    margin-bottom: 25px;
+
+                    img {
+                        height: 300px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .content {
+                    .contents {
+
+                        padding: 2em 4em;
+                        background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+                        background-clip: padding-box;
+                        background-size: 4px 4px;
+                        border-top: 4px double #eaeaea;
+                        border-bottom: 4px double #eaeaea;
+                        margin-bottom: 25px;
+
+                        @media (max-width:$small) {
+                            padding: 2em 2em;
+                        }
+
+                        p {
+                            text-align: center;
+                            font-weight: 500;
+                            line-height: 2;
+
+                            @media (max-width:$small) {
+                                font-size: 16px !important;
+                            }
+
+                        }
+
+                        ul {
+                            li {
+                                font-size: 14px;
+                                line-height: 2;
+                            }
+                        }
+                    }
+
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5 {
+                        position: relative;
+                        padding: 10px 0px;
+                        padding-left: 1em;
+                        margin: 1em 0;
+                        height: max-content;
+                        width: 100%;
+                        background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+                        background-clip: padding-box;
+                        background-size: 4px 4px;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 4px;
+                            height: 100%;
+                            display: block;
+                            background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+                        }
+                    }
+
+                    @media(max-width: $small) {
+                        h1 {
+                            font-size: 22px;
+                        }
+
+                        h2 {
+                            font-size: 16px;
+                        }
+
+                        h3 {
+                            font-size: 14px;
+                        }
+
+                        h4,
+                        h5 {
+                            font-size: 12px;
+                        }
+                    }
+
+                    p {
+                        line-height: 2;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .side-bar {
+                width: 25%;
+                max-width: 305px;
+
+                @media (max-width: $small) {
+                    width: 100%;
+                    max-width: unset;
+                }
+
+                .item {
+                    margin-bottom: 50px;
+
+                    @media (max-width:$small) {
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        position: relative;
+                        font-size: 16px !important;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        border-bottom: 1px solid #eaeaea;
+                        padding: 20px 0px;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -1px;
+                            left: 0;
+                            width: 65%;
+                            height: 1px;
+                            display: block;
+                            background-color: $impact-color;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            list-style: none;
+                            padding: 10px 20px;
+                            border-bottom: 1px solid #eaeaea;
+                            font-size: 14px;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                            transition: .5s;
+
+                            svg {
+                                height: 20px;
+                                width: 20px;
+                                margin-right: 5px;
+                            }
+
+                            &:hover {
+                                color: $impact-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

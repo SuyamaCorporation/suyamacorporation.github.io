@@ -1,4 +1,8 @@
 @charset "UTF-8";
+:root {
+  --color_gray: hsla(0, 0%, 78%, .15);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -2493,6 +2497,7 @@ main.column-list section.column-list .container .pagination ul {
 main.column-list section.column-list .container .pagination ul li {
   list-style: none;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 main.column-list section.column-list .container .pagination ul li span {
@@ -2531,5 +2536,223 @@ main.column-list section.column-list .container .pagination ul::after {
   width: 100%;
   height: 1px;
   background-color: #fa709a;
+}
+
+main.column .page-title .container .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+main.column .page-title .container .category span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 25px;
+  color: #898989;
+}
+
+main.column .page-title .container .category span svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+main.column section.column {
+  padding-top: 25px;
+}
+
+main.column section.column .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main.column section.column .container .post {
+  width: 65%;
+  min-width: 320px;
+  margin-right: auto;
+}
+
+@media (max-width: 450px) {
+  main.column section.column .container .post {
+    width: 100%;
+  }
+}
+
+main.column section.column .container .post .eye-catch {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+main.column section.column .container .post .eye-catch img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main.column section.column .container .post .content .contents {
+  padding: 2em 4em;
+  background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+  background-clip: padding-box;
+  background-size: 4px 4px;
+  border-top: 4px double #eaeaea;
+  border-bottom: 4px double #eaeaea;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 450px) {
+  main.column section.column .container .post .content .contents {
+    padding: 2em 2em;
+  }
+}
+
+main.column section.column .container .post .content .contents p {
+  text-align: center;
+  font-weight: 500;
+  line-height: 2;
+}
+
+@media (max-width: 450px) {
+  main.column section.column .container .post .content .contents p {
+    font-size: 16px !important;
+  }
+}
+
+main.column section.column .container .post .content .contents ul li {
+  font-size: 14px;
+  line-height: 2;
+}
+
+main.column section.column .container .post .content h1,
+main.column section.column .container .post .content h2,
+main.column section.column .container .post .content h3,
+main.column section.column .container .post .content h4,
+main.column section.column .container .post .content h5 {
+  position: relative;
+  padding: 10px 0px;
+  padding-left: 1em;
+  margin: 1em 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+  background-clip: padding-box;
+  background-size: 4px 4px;
+}
+
+main.column section.column .container .post .content h1::before,
+main.column section.column .container .post .content h2::before,
+main.column section.column .container .post .content h3::before,
+main.column section.column .container .post .content h4::before,
+main.column section.column .container .post .content h5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed6ea0), to(#ec8c69));
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+@media (max-width: 450px) {
+  main.column section.column .container .post .content h1 {
+    font-size: 22px;
+  }
+  main.column section.column .container .post .content h2 {
+    font-size: 16px;
+  }
+  main.column section.column .container .post .content h3 {
+    font-size: 14px;
+  }
+  main.column section.column .container .post .content h4,
+  main.column section.column .container .post .content h5 {
+    font-size: 12px;
+  }
+}
+
+main.column section.column .container .post .content p {
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+main.column section.column .container .side-bar {
+  width: 25%;
+  max-width: 305px;
+}
+
+@media (max-width: 450px) {
+  main.column section.column .container .side-bar {
+    width: 100%;
+    max-width: unset;
+  }
+}
+
+main.column section.column .container .side-bar .item {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+  main.column section.column .container .side-bar .item {
+    margin-bottom: 25px;
+  }
+}
+
+main.column section.column .container .side-bar .item p {
+  position: relative;
+  font-size: 16px !important;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 0px;
+}
+
+main.column section.column .container .side-bar .item p::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 65%;
+  height: 1px;
+  display: block;
+  background-color: #fa709a;
+}
+
+main.column section.column .container .side-bar .item ul li {
+  list-style: none;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main.column section.column .container .side-bar .item ul li svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+main.column section.column .container .side-bar .item ul li:hover {
+  color: #fa709a;
 }
 /*# sourceMappingURL=style.css.map */
