@@ -150,14 +150,19 @@ main {
 }
 
 main .on-mobile {
-  display: none;
+  display: none !important;
 }
 
 main .page-title {
   position: relative;
   padding: 2vw 0;
-  background-color: #f8f8f8;
-  background-image: repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 14px);
+  /*
+        background-color: $gray;
+        background-image: repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 14px);
+        */
+  background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+  background-clip: padding-box;
+  background-size: 4px 4px;
 }
 
 main .page-title h1 span {
@@ -2045,6 +2050,14 @@ main.support section.support .container .support .right-container .item.price .b
   .off-mobile {
     display: none !important;
   }
+  .on-mobile {
+    display: block !important;
+  }
+  .view-more.on-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   main .left-container {
     width: 100% !important;
   }
@@ -2084,6 +2097,9 @@ main.support section.support .container .support .right-container .item.price .b
   }
   main section {
     padding: calc(25px + 5vh) 0 !important;
+  }
+  main section.contact h1 {
+    font-size: calc(16px + 0.4vw) !important;
   }
   main section.nav .view-more {
     width: 100%;
@@ -2809,5 +2825,58 @@ main.column section.column .container .side-bar .item ul li svg {
 
 main.column section.column .container .side-bar .item ul li:hover {
   color: #fa709a;
+}
+
+main.common section.common {
+  padding-top: 25px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#dfe9f3), to(white));
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+@media (max-width: 450px) {
+  main.common section.common {
+    padding-top: 15px !important;
+  }
+}
+
+main.common section.common .container {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+@media (max-width: 450px) {
+  main.common section.common .container {
+    padding: 1em;
+  }
+}
+
+main.common section.common .container h1 {
+  font-size: calc(24px + 0.4vw) !important;
+  margin: 25px 0px;
+}
+
+main.common section.common .container h2 {
+  font-size: calc(16px + 0.4vw) !important;
+  margin: 20px 0px;
+}
+
+main.common section.common .container h3 {
+  font-size: calc(14px + 0.4vw) !important;
+  margin: 15px 0px;
+}
+
+main.common section.common .container p {
+  line-height: 2;
+  font-size: calc(12px + 0.2vw) !important;
+}
+
+main.common section.common .container ul {
+  padding-left: 2em;
+}
+
+main.common section.common .container ul li {
+  line-height: 2;
+  font-size: calc(12px + 0.2vw) !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -136,15 +136,20 @@ main {
     position: relative;
 
     .on-mobile {
-        display: none;
+        display: none !important;
     }
 
     .page-title {
         position: relative;
         padding: 2vw 0;
+        /*
         background-color: $gray;
-        background-image:
-            repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 14px);
+        background-image: repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 14px);
+        */
+
+        background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+        background-clip: padding-box;
+        background-size: 4px 4px;
 
         h1 {
             span {
@@ -1238,3 +1243,4 @@ footer {
 @import 'contact';
 @import 'column_list';
 @import 'column';
+@import 'page_common';
