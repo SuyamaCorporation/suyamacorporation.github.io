@@ -1,0 +1,219 @@
+/* プラン・料金 */
+main.plan {
+    section.plan {
+        min-height: 100vh;
+
+        .container {
+            .tab {
+                display: flex;
+                flex-wrap: nowrap;
+
+                h2 {
+                    font-size: calc(12px + 0.4vw);
+                    font-weight: 500;
+                    text-align: center;
+                    width: 50%;
+                    border: 1px solid #eaeaea;
+                    border-bottom-width: 0px;
+                    padding: 1vw;
+
+                    span {
+                        font-size: calc(10px + 0.8vw);
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        color: #fa709a
+                    }
+
+                    cursor: pointer;
+                }
+
+                h2.off {
+                    background-color: $gray;
+                    border-bottom-width: 1px;
+
+                    span {
+                        color: #555;
+                    }
+                }
+
+                h2+h2 {
+                    border-left-width: 0px;
+                }
+            }
+
+            .plan-wrapper.off {
+                display: none;
+            }
+
+            .plan-wrapper {
+                background-color: #fff;
+                border: 1px solid #eaeaea;
+                border-top-width: 0px;
+                padding: 20px;
+                margin-bottom: 25px;
+
+                h3 {
+                    font-size: calc(12px + 0.6vw);
+                    font-weight: 900;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                .flex {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    min-height: 60px;
+
+                    h3 {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        margin-right: 10px;
+                    }
+
+                    select {
+                        padding: 10px 15px;
+                        border: 0px solid #fa709a;
+                        border-radius: 0px;
+                        border-bottom-width: 1px;
+                        font-size: calc(12px + 0.6vw);
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+
+                .plan.on {
+                    display: block;
+                }
+
+                .plan.basic {
+                    display: block !important;
+                }
+
+                .plan {
+                    display: none;
+
+                    .wrapper {
+
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .row {
+                            display: flex;
+                            align-items: center;
+                            margin: 10px;
+                            margin-top: 0px;
+                            margin-left: 0px;
+                            border: 1px solid #eaeaea;
+                            width: max-content;
+
+                            .label {
+                                font-weight: 600;
+                                background-color: $gray;
+                                padding: 15px 20px;
+                                min-width: 120px;
+                                border-right: 1px solid #eaeaea;
+                            }
+
+                            .text {
+                                font-size: 12px;
+                                min-width: 145px;
+                                padding: 0px 20px;
+
+                                span {
+                                    display: inline-block;
+                                    font-size: calc(12px + 0.8vw);
+                                    font-weight: 900;
+                                    margin-right: 5px;
+
+                                }
+
+                                svg {
+                                    display: block;
+                                    height: 30px;
+                                    width: max-content;
+                                    margin: auto;
+                                }
+                            }
+                        }
+
+                        p.annotation {
+                            font-size: 14px;
+
+                            a {
+                                font-weight: 600;
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    ul.target {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            list-style: none;
+                            width: 30%;
+                            min-width: 280px;
+                            padding: 15px;
+                            background-color: #fff;
+                            border-radius: 5px;
+                            border: 1px solid #eaeaea;
+                            margin: 10px 5px;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    ul.example {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            list-style: none;
+                            width: max-content;
+                            background-color: $gray;
+                            font-weight: 600;
+                            padding: 5px;
+                            margin: 5px;
+                        }
+                    }
+
+                    p.point {
+                        line-height: 1.5;
+                        font-size: 14px;
+
+                        span {
+                            color: #fa709a;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .option,
+        .example {
+            h2 {
+                @media (max-width : $small) {
+                    font-size: 16px !important;
+                }
+            }
+
+            .point {
+                padding: 20px;
+                border: 1px solid #eaeaea;
+                border-radius: 15px;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                .view-more {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

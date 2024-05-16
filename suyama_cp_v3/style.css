@@ -141,125 +141,6 @@ header.on .container nav ul li {
   color: #333;
 }
 
-@media (max-width: 1040px) {
-  section h1 {
-    font-size: calc(16px + 0.4vw) !important;
-  }
-  section p {
-    font-size: 12px !important;
-  }
-}
-
-@media (max-width: 700px) {
-  main .off-mobile {
-    display: none !important;
-  }
-  main .left-container {
-    width: 100% !important;
-  }
-  main .right-container {
-    width: 100% !important;
-  }
-  main section h1 {
-    font-size: calc(16px + 0.8vw) !important;
-  }
-  main section p {
-    font-size: 12px;
-  }
-  main section.nav .view-more {
-    width: 45%;
-  }
-  main .view-more {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin: auto;
-  }
-}
-
-@media (max-width: 450px) {
-  .on-mobile {
-    display: block !important;
-  }
-  .guide {
-    bottom: 0 !important;
-    width: 100%;
-  }
-  .guide button {
-    width: 50% !important;
-  }
-  main .page-title h1 span {
-    font-size: 22px !important;
-  }
-  main section {
-    padding: calc(25px + 5vh) 0 !important;
-  }
-  main section.nav .view-more {
-    width: 100%;
-  }
-  main section.contact .button-wrapper button {
-    margin: auto !important;
-  }
-  main.page h2 {
-    font-size: 22px !important;
-  }
-  main.page h3 {
-    font-size: 16px !important;
-  }
-  main.page section.spec .container .spec-wrapper .spec .image-wrapper {
-    height: 250px !important;
-  }
-  main.page section.spec .container .spec-wrapper .spec .body h2 {
-    font-size: 16px !important;
-  }
-  main.page section.plan .container .tab h2 span {
-    font-size: 16px !important;
-    letter-spacing: 0px !important;
-  }
-  main.page section.plan .container .plan-wrapper .plan .wrapper .row {
-    width: 95% !important;
-    margin: auto !important;
-    margin-bottom: 10px !important;
-  }
-  main.page section.plan .container .plan-wrapper .plan .wrapper .row .label {
-    font-size: 12px !important;
-    min-width: 130px !important;
-  }
-  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text {
-    text-align: right;
-  }
-  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text svg {
-    height: 20px !important;
-  }
-  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text span {
-    font-size: 15px !important;
-  }
-  main.page section.plan .container .plan-wrapper .plan ul.target li {
-    font-size: 12px !important;
-  }
-  main.page section.plan .container .plan-wrapper .plan ul.example li {
-    font-size: 12px !important;
-  }
-  main.page section.plan .container .option .option .label span,
-  main.page section.plan .container .example .option .label span {
-    font-size: 12px !important;
-  }
-  main.page section.nav .container h2 {
-    font-size: 22px !important;
-  }
-  main.page section.support .container .support {
-    padding: 10px !important;
-  }
-  main.page section.support .container .support .right-container .tag svg {
-    height: 20px !important;
-    margin: 0px !important;
-    margin-top: 0px !important;
-  }
-  main.page section.flow .container .step .head h2 {
-    font-size: 14px !important;
-  }
-}
-
 main {
   position: relative;
 }
@@ -385,6 +266,13 @@ main section.top {
   min-height: unset;
 }
 
+@media (max-width: 450px) {
+  main section.top {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
 main section.top .bg-wrapper {
   position: absolute;
   top: 0;
@@ -439,8 +327,14 @@ main section.top .eye-catch h1 {
   width: 100%;
 }
 
-main section.top .eye-catch p {
+main section.top .eye-catch p.sub-text {
   font-size: calc(16px + 1vw);
+}
+
+@media (max-width: 450px) {
+  main section.top .eye-catch p.sub-text {
+    font-size: 16px !important;
+  }
 }
 
 main section.top .eye-catch h1 {
@@ -559,6 +453,13 @@ main section.reason .container h1 {
   margin-bottom: 50px;
 }
 
+@media (max-width: 450px) {
+  main section.reason .container h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
 main section.reason .container h1 span {
   background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
@@ -573,6 +474,12 @@ main section.reason .container p {
   line-height: 2;
   font-size: 16px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+  main section.reason .container p {
+    margin-bottom: 25px;
+  }
 }
 
 main section.reason::before {
@@ -731,32 +638,6 @@ main section.plan .container .plan-wrapper .plan-table {
 main section.plan .container .plan-wrapper .plan-table .row {
   display: table-row;
   border-bottom: 2px solid #eaeaea;
-  /*
-                        .col.start {
-                            background-color: #edfff4;
-                        }
-
-                        .col.regular {
-                            background-color: #edfcff;
-                        }
-
-                        .col.pro {
-                            background-color: #fff2ed;
-                        }
-                        */
-  /*
-                        .col.head.start {
-                            background-image: linear-gradient(-45deg, #96ffb2 0%, #00733f 100%)
-                        }
-
-                        .col.head.regular {
-                            background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
-                        }
-
-                        .col.head.pro {
-                            background-image: linear-gradient(-45deg, #cd915c 0%, #d7c854 100%);
-                        }
-                        */
 }
 
 main section.plan .container .plan-wrapper .plan-table .row .col {
@@ -812,6 +693,30 @@ main section.plan .container .plan-wrapper .plan ul li {
   display: flex;
 }
 
+@media (max-width: 450px) {
+  main section.plan .container .plan-wrapper {
+    overflow-x: scroll;
+  }
+  main section.plan .container .plan-wrapper .plan-table {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  main section.plan .container .plan-wrapper .plan-table .row .col {
+    min-width: 180px;
+    height: 55px;
+    padding: 5px;
+  }
+  main section.plan .container .plan-wrapper .plan-table .row .col svg {
+    height: 20px;
+  }
+  main section.plan .container .plan-wrapper .plan-table .row .col.label {
+    min-width: unset !important;
+    width: 150px !important;
+    font-size: 14px;
+  }
+}
+
 main section.plan .container .option,
 main section.plan .container .example {
   margin-bottom: 25px;
@@ -821,6 +726,13 @@ main section.plan .container .option h2,
 main section.plan .container .example h2 {
   margin-bottom: 10px;
   font-weight: 900;
+}
+
+@media (max-width: 450px) {
+  main section.plan .container .option h2,
+  main section.plan .container .example h2 {
+    font-size: 16px;
+  }
 }
 
 main section.plan .container .option .option,
@@ -844,6 +756,13 @@ main section.plan .container .example .option .label span {
   display: inline-block;
   font-weight: 600;
   padding: 10px 20px;
+}
+
+@media (max-width: 450px) {
+  main section.plan .container .option .option .label span,
+  main section.plan .container .example .option .label span {
+    font-size: 12px;
+  }
 }
 
 main section.plan .container .option .option .price,
@@ -901,6 +820,12 @@ main section.support .container .support {
   margin-bottom: 50px;
 }
 
+@media (max-width: 450px) {
+  main section.support .container .support {
+    padding: 15px;
+  }
+}
+
 main section.support .container .support .left-container,
 main section.support .container .support .right-container {
   min-width: 320px;
@@ -912,6 +837,13 @@ main section.support .container .support h2 {
   font-size: calc(24px + 0.4vw);
   margin-bottom: 25px;
   width: 100%;
+}
+
+@media (max-width: 450px) {
+  main section.support .container .support h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 main section.support .container .support p {
@@ -951,16 +883,42 @@ main section.support .container .support .right-container .tag svg {
   height: 25px;
 }
 
+@media (max-width: 450px) {
+  main section.support .container .support .right-container .tag svg {
+    height: 20px;
+  }
+}
+
 main section.support .container .support .right-container .tag span {
   font-size: 14px;
   font-weight: 500;
   color: #8f8f8f;
 }
 
+@media (max-width: 450px) {
+  main section.support .container .support .right-container .tag span {
+    font-size: 12px;
+  }
+}
+
+main section.support .container .support .view-more.on-mobile {
+  margin-top: 25px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 main section.flow .container h1 {
   position: relative;
   font-size: calc(24px + 0.8vw);
   margin-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+  main section.flow .container h1 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
 }
 
 main section.flow .container h1::after {
@@ -1014,6 +972,12 @@ main section.flow .container .step .head .label {
 main section.flow .container .step .head h2 {
   font-size: calc(10px + 0.4vw);
   padding-left: 10px;
+}
+
+@media (max-width: 450px) {
+  main section.flow .container .step .head h2 {
+    font-size: 14px;
+  }
 }
 
 main section.flow .container .step .text {
@@ -1107,6 +1071,13 @@ main section.column .container h1 {
   text-align: center;
 }
 
+@media (max-width: 450px) {
+  main section.column .container h1 {
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+}
+
 main section.column .container h1::before, main section.column .container h1::after {
   content: '';
   position: absolute;
@@ -1121,6 +1092,12 @@ main section.column .container h1::before, main section.column .container h1::af
   background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+@media (max-width: 450px) {
+  main section.column .container h1::before, main section.column .container h1::after {
+    height: 30px;
+  }
 }
 
 main section.column .container h1::after {
@@ -1167,7 +1144,13 @@ main section.column .container .post-list .post .post-body {
   min-height: 100px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #ffffffe8;
+}
+
+@media (max-width: 450px) {
+  main section.column .container .post-list .post .post-body {
+    min-height: 75px;
+  }
 }
 
 main section.column .container .post-list .post .post-body p.post-title {
@@ -1226,17 +1209,162 @@ main.page section.nav .container .flex .view-more {
   margin-bottom: 20px;
 }
 
+footer {
+  min-height: 30vh;
+  padding: calc(50px + 5vh) 0;
+  padding-top: 25px;
+  background-color: #111;
+}
+
+footer * {
+  color: #fff;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container .left-container,
+footer .container .right-container {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  footer .container .left-container,
+  footer .container .right-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .container .left-container *,
+  footer .container .right-container * {
+    font-size: 12px !important;
+  }
+}
+
+footer .container .left-container p.service {
+  font-family: "Anton";
+  font-size: calc(12px + 1.8vw);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  footer .container .left-container p.service {
+    font-size: 22px !important;
+  }
+}
+
+footer .container .left-container p.corp {
+  font-size: calc(10px + 0.6vw);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  footer .container .left-container p.corp {
+    font-size: 18px !important;
+  }
+}
+
+footer .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+footer .container ul li {
+  list-style: none;
+  padding: 10px 0px;
+  width: 25%;
+  min-width: 150px;
+}
+
+@media (max-width: 450px) {
+  footer .container ul li {
+    width: 50% !important;
+  }
+}
+
+footer .container p.copy {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* animation-settings */
+@-webkit-keyframes flow {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+}
+@keyframes flow {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+}
+
+/* ご依頼の流れ */
 /* 選ばれる理由 */
 main.reason section.reason {
   min-height: 100vh;
+}
+
+main.reason section.reason .container {
+  display: block;
 }
 
 main.reason section.reason .container .reason {
   margin-bottom: 100px;
 }
 
+@media (max-width: 450px) {
+  main.reason section.reason .container .reason {
+    margin-bottom: 50px;
+  }
+}
+
 main.reason section.reason .container .reason .title {
   margin-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+  main.reason section.reason .container .reason .title {
+    margin-bottom: 25px;
+  }
 }
 
 main.reason section.reason .container .reason .title h2 {
@@ -1267,115 +1395,6 @@ main.reason section.reason .container .reason .body p span {
 
 main.reason section.reason .container .reason .view-more {
   margin-top: 50px;
-}
-
-/* 機能・仕様 */
-main.spec section.spec {
-  min-height: 100vh;
-}
-
-main.spec section.spec .container h1 {
-  position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  text-align: center;
-  font-weight: 900;
-  font-size: calc(24px + 0.8vw);
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-main.spec section.spec .container h1::before, main.spec section.spec .container h1::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -2vw;
-  display: block;
-  width: 2px;
-  height: 50px;
-  margin: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#ed7790));
-  background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-main.spec section.spec .container h1::after {
-  left: unset;
-  right: -2vw;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-main.spec section.spec .container p.sub-text {
-  margin-bottom: 25px;
-}
-
-main.spec section.spec .container .spec-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-main.spec section.spec .container .spec-wrapper .spec {
-  width: 30%;
-  min-width: 320px;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 25px;
-  border-radius: 15px;
-  border: 1px solid #eaeaea;
-  padding: 20px;
-  padding-top: 0px;
-  background-color: #fff;
-}
-
-main.spec section.spec .container .spec-wrapper .spec .image-wrapper {
-  width: 100%;
-  height: 295px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main.spec section.spec .container .spec-wrapper .spec .image-wrapper img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-main.spec section.spec .container .spec-wrapper .spec .body {
-  padding-bottom: 10px;
-}
-
-main.spec section.spec .container .spec-wrapper .spec .body h2 {
-  font-size: calc(16px + 0.2vw);
-  font-weight: 700;
-  margin-bottom: 25px;
-  text-align: center;
-  background-color: #f8f8f8;
-  padding: 5px 0px;
-}
-
-main.spec section.spec .container .spec-wrapper .spec .body p {
-  line-height: 2;
-  font-weight: 500;
-}
-
-main.spec section.spec .container .spec-wrapper .spec .body p span {
-  color: #ed6ea0;
-}
-
-main.spec section.spec .container .spec-wrapper .spec .body .view-more {
-  margin-top: 20px;
 }
 
 /* プラン・料金 */
@@ -1593,17 +1612,248 @@ main.plan section.plan .container .plan-wrapper .plan p.point span {
   color: #fa709a;
 }
 
-main.plan section.plan .option .point {
+@media (max-width: 450px) {
+  main.plan section.plan .option h2,
+  main.plan section.plan .example h2 {
+    font-size: 16px !important;
+  }
+}
+
+main.plan section.plan .option .point,
+main.plan section.plan .example .point {
   padding: 20px;
   border: 1px solid #eaeaea;
   border-radius: 15px;
 }
 
-main.plan section.plan .option .point h3 {
+main.plan section.plan .option .point h3,
+main.plan section.plan .example .point h3 {
   margin-bottom: 20px;
 }
 
-main.plan section.plan .option .point .view-more {
+main.plan section.plan .option .point .view-more,
+main.plan section.plan .example .point .view-more {
+  margin-top: 20px;
+}
+
+/* よくあるご質問 */
+main.question section.question {
+  padding-top: 25px;
+}
+
+main.question section.question .container h2 {
+  position: relative;
+  font-size: calc(24px + 0.4vw);
+  font-weight: 900;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10px;
+}
+
+main.question section.question .container h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#ed7790));
+  background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+}
+
+main.question section.question .container .wrapper {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+main.question section.question .container .wrapper .question h3 {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 3ch;
+}
+
+@media (max-width: 450px) {
+  main.question section.question .container .wrapper .question h3 {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+}
+
+main.question section.question .container .wrapper .question h3::before {
+  content: 'Q.';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: 900;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: block;
+  margin: auto;
+  color: #8f8f8f;
+}
+
+@media (max-width: 450px) {
+  main.question section.question .container .wrapper .question h3::before {
+    top: 0;
+    left: -5px;
+    bottom: unset;
+    margin: unset;
+  }
+}
+
+main.question section.question .container .wrapper .answer p {
+  position: relative;
+  padding-left: 3ch;
+  line-height: 2;
+}
+
+@media (max-width: 450px) {
+  main.question section.question .container .wrapper .answer p {
+    padding-left: 20px;
+  }
+}
+
+main.question section.question .container .wrapper .answer p::before {
+  content: 'A.';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fa709a;
+}
+
+@media (max-width: 450px) {
+  main.question section.question .container .wrapper .answer p::before {
+    top: 0;
+    left: -5px;
+    bottom: unset;
+    margin: unset;
+  }
+}
+
+/* 機能・仕様 */
+main.spec section.spec {
+  min-height: 100vh;
+}
+
+main.spec section.spec .container h1 {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-weight: 900;
+  font-size: calc(24px + 0.8vw);
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+main.spec section.spec .container h1::before, main.spec section.spec .container h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -2vw;
+  display: block;
+  width: 2px;
+  height: 50px;
+  margin: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#ed7790));
+  background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+main.spec section.spec .container h1::after {
+  left: unset;
+  right: -2vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main.spec section.spec .container p.sub-text {
+  margin-bottom: 25px;
+}
+
+main.spec section.spec .container .spec-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main.spec section.spec .container .spec-wrapper .spec {
+  width: 30%;
+  min-width: 320px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  padding-top: 0px;
+  background-color: #fff;
+}
+
+main.spec section.spec .container .spec-wrapper .spec .image-wrapper {
+  width: 100%;
+  height: 295px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.spec section.spec .container .spec-wrapper .spec .image-wrapper img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main.spec section.spec .container .spec-wrapper .spec .body {
+  padding-bottom: 10px;
+}
+
+main.spec section.spec .container .spec-wrapper .spec .body h2 {
+  font-size: calc(16px + 0.2vw);
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 5px 0px;
+}
+
+main.spec section.spec .container .spec-wrapper .spec .body p {
+  line-height: 2;
+  font-weight: 500;
+}
+
+main.spec section.spec .container .spec-wrapper .spec .body p span {
+  color: #ed6ea0;
+}
+
+main.spec section.spec .container .spec-wrapper .spec .body .view-more {
   margin-top: 20px;
 }
 
@@ -1630,6 +1880,12 @@ main.support section.support .container .support h2::after {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
+@media (max-width: 450px) {
+  main.support section.support .container .support h2 {
+    margin-top: 10px;
+  }
+}
+
 main.support section.support .container .support .left-container,
 main.support section.support .container .support .right-container {
   width: 100%;
@@ -1649,6 +1905,12 @@ main.support section.support .container .support .right-container .item {
   min-width: 300px;
   border: 1px solid #eaeaea;
   margin-bottom: 25px;
+}
+
+@media (max-width: 450px) {
+  main.support section.support .container .support .right-container .item {
+    width: 95%;
+  }
 }
 
 main.support section.support .container .support .right-container .item .head {
@@ -1711,213 +1973,122 @@ main.support section.support .container .support .right-container .item.price .b
   margin-right: 10px;
 }
 
-/* ご依頼の流れ */
-/* よくあるご質問 */
-main.question section.question {
-  padding-top: 25px;
-}
-
-main.question section.question .container h2 {
-  position: relative;
-  font-size: calc(24px + 0.4vw);
-  font-weight: 900;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding-left: 10px;
-}
-
-main.question section.question .container h2::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  display: block;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#ed7790));
-  background-image: linear-gradient(to right, #fa709a 0%, #ed7790 100%);
-}
-
-main.question section.question .container .wrapper {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-}
-
-main.question section.question .container .wrapper .question h3 {
-  position: relative;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  padding-left: 3ch;
-}
-
-main.question section.question .container .wrapper .question h3::before {
-  content: 'Q.';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  font-size: 18px;
-  font-weight: 900;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  display: block;
-  margin: auto;
-  color: #8f8f8f;
-}
-
-main.question section.question .container .wrapper .answer p {
-  position: relative;
-  padding-left: 3ch;
-  line-height: 2;
-}
-
-main.question section.question .container .wrapper .answer p::before {
-  content: 'A.';
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 18px;
-  font-weight: 900;
-  color: #fa709a;
-}
-
-footer {
-  min-height: 30vh;
-  padding: calc(50px + 5vh) 0;
-  padding-top: 25px;
-  background-color: #111;
-}
-
-footer * {
-  color: #fff;
-}
-
-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-footer .container .left-container,
-footer .container .right-container {
-  width: 50%;
-}
-
-@media (max-width: 700px) {
-  footer .container .left-container,
-  footer .container .right-container {
-    width: 100%;
+@media (max-width: 1040px) {
+  section h1 {
+    font-size: calc(16px + 0.4vw) !important;
   }
-}
-
-@media (max-width: 450px) {
-  footer .container .left-container *,
-  footer .container .right-container * {
+  section p {
     font-size: 12px !important;
   }
 }
 
-footer .container .left-container p.service {
-  font-family: "Anton";
-  font-size: calc(12px + 1.8vw);
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 450px) {
-  footer .container .left-container p.service {
-    font-size: 22px !important;
+@media (max-width: 700px) {
+  .off-mobile {
+    display: none !important;
+  }
+  main .left-container {
+    width: 100% !important;
+  }
+  main .right-container {
+    width: 100% !important;
+  }
+  main section h1 {
+    font-size: calc(16px + 0.8vw) !important;
+  }
+  main section p {
+    font-size: 12px;
+  }
+  main section.nav .view-more {
+    width: 45%;
+  }
+  main .view-more {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
   }
 }
 
-footer .container .left-container p.corp {
-  font-size: calc(10px + 0.6vw);
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
 @media (max-width: 450px) {
-  footer .container .left-container p.corp {
-    font-size: 18px !important;
+  .on-mobile {
+    display: block !important;
   }
-}
-
-footer .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-}
-
-footer .container ul li {
-  list-style: none;
-  padding: 10px 0px;
-  width: 25%;
-  min-width: 150px;
-}
-
-@media (max-width: 450px) {
-  footer .container ul li {
+  .guide {
+    bottom: 0 !important;
+    width: 100%;
+  }
+  .guide button {
     width: 50% !important;
   }
-}
-
-footer .container p.copy {
-  margin-top: 25px;
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-}
-
-/* animation-settings */
-@-webkit-keyframes flow {
-  0% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  main .page-title h1 span {
+    font-size: 22px !important;
   }
-  50% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  main section {
+    padding: calc(25px + 5vh) 0 !important;
   }
-  100% {
-    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  main section.nav .view-more {
+    width: 100%;
   }
-}
-@keyframes flow {
-  0% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  main section.contact .button-wrapper button {
+    margin: auto !important;
   }
-  50% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  main.page h2 {
+    font-size: 22px !important;
   }
-  100% {
-    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  main.page h3 {
+    font-size: 16px !important;
+  }
+  main.page section.spec .container .spec-wrapper .spec .image-wrapper {
+    height: 250px !important;
+  }
+  main.page section.spec .container .spec-wrapper .spec .body h2 {
+    font-size: 16px !important;
+  }
+  main.page section.plan .container .tab h2 span {
+    font-size: 16px !important;
+    letter-spacing: 0px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row {
+    width: 95% !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .label {
+    font-size: 12px !important;
+    min-width: 130px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text {
+    text-align: right;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text svg {
+    height: 20px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan .wrapper .row .text span {
+    font-size: 15px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan ul.target li {
+    font-size: 12px !important;
+  }
+  main.page section.plan .container .plan-wrapper .plan ul.example li {
+    font-size: 12px !important;
+  }
+  main.page section.plan .container .option .option .label span,
+  main.page section.plan .container .example .option .label span {
+    font-size: 12px !important;
+  }
+  main.page section.nav .container h2 {
+    font-size: 22px !important;
+  }
+  main.page section.support .container .support {
+    padding: 10px !important;
+  }
+  main.page section.support .container .support .right-container .tag svg {
+    height: 20px !important;
+    margin: 0px !important;
+    margin-top: 0px !important;
+  }
+  main.page section.flow .container .step .head h2 {
+    font-size: 14px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

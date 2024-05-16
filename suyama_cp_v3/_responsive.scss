@@ -1,0 +1,225 @@
+@media (max-width: $large) {
+    section {
+        h1 {
+            font-size: calc(16px + 0.4vw) !important;
+        }
+
+        p {
+            font-size: 12px !important;
+        }
+    }
+}
+
+@media (max-width: $middle) {
+    .off-mobile {
+        display: none !important;
+    }
+
+    main {
+
+        .left-container {
+            width: 100% !important;
+        }
+
+        .right-container {
+            width: 100% !important;
+        }
+
+        section {
+            h1 {
+                font-size: calc(16px + 0.8vw) !important;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .container {}
+        }
+
+        section.nav {
+            .view-more {
+                width: 45%;
+            }
+        }
+
+        .view-more {
+            width: max-content;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: $small) {
+    .on-mobile {
+        display: block !important;
+    }
+
+    .guide {
+        bottom: 0 !important;
+        width: 100%;
+
+        button {
+            width: 50% !important;
+        }
+    }
+
+    main {
+        .page-title {
+            h1 {
+                span {
+                    font-size: 22px !important;
+                }
+            }
+        }
+
+        section {
+            padding: calc(25px + 5vh) 0 !important;
+        }
+
+        section.nav {
+            .view-more {
+                width: 100%;
+            }
+        }
+
+        section.contact {
+            .button-wrapper {
+                button {
+                    margin: auto !important;
+                }
+            }
+        }
+    }
+
+    main.page {
+        h2 {
+            font-size: 22px !important;
+        }
+
+        h3 {
+            font-size: 16px !important;
+        }
+
+        section.spec {
+            .container {
+                .spec-wrapper {
+                    .spec {
+                        .image-wrapper {
+                            height: 250px !important;
+                        }
+
+                        .body {
+                            h2 {
+                                font-size: 16px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.plan {
+            .container {
+                .tab {
+                    h2 {
+                        span {
+                            font-size: 16px !important;
+                            letter-spacing: 0px !important;
+                        }
+                    }
+                }
+
+                .plan-wrapper {
+                    .plan {
+                        .wrapper {
+                            .row {
+                                width: 95% !important;
+                                margin: auto !important;
+                                margin-bottom: 10px !important;
+
+                                .label {
+                                    font-size: 12px !important;
+                                    min-width: 130px !important;
+                                }
+
+                                .text {
+                                    text-align: right;
+
+                                    svg {
+                                        height: 20px !important;
+                                    }
+
+                                    span {
+                                        font-size: 15px !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        ul.target {
+                            li {
+                                font-size: 12px !important;
+                            }
+                        }
+
+                        ul.example {
+                            li {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+
+                .option,
+                .example {
+                    .option {
+                        .label {
+                            span {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.nav {
+            .container {
+                h2 {
+                    font-size: 22px !important;
+                }
+            }
+        }
+
+        section.support {
+            .container {
+                .support {
+                    padding: 10px !important;
+
+                    .right-container {
+                        .tag {
+                            svg {
+                                height: 20px !important;
+                                margin: 0px !important;
+                                margin-top: 0px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.flow {
+            .container {
+                .step {
+                    .head {
+                        h2 {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

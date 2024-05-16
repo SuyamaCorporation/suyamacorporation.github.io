@@ -1,0 +1,57 @@
+/* 選ばれる理由 */
+main.reason {
+
+    section.reason {
+        min-height: 100vh;
+
+        .container {
+            display: block;
+
+            .reason {
+                margin-bottom: 100px;
+
+                @media (max-width: $small) {
+                    margin-bottom: 50px;
+                }
+
+                .title {
+                    margin-bottom: 50px;
+
+                    @media (max-width: $small) {
+                        margin-bottom: 25px;
+                    }
+
+                    h2 {
+                        font-weight: 800;
+                        font-size: calc(16px + 1.8vw);
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        margin: unset;
+                        font-size: calc(16px + 0.4vw);
+                    }
+                }
+
+                .body {
+                    display: flex;
+
+
+                    p {
+                        margin: unset;
+
+                        span {
+                            color: #ed6ea0;
+                        }
+                    }
+
+                }
+
+                .view-more {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
