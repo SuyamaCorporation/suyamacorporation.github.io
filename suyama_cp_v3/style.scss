@@ -140,6 +140,7 @@ main {
     }
 
     .page-title {
+        position: relative;
         padding: 2vw 0;
         background-color: $gray;
         background-image:
@@ -159,6 +160,50 @@ main {
                     height: 3px;
                     width: 100%;
                     background-image: linear-gradient(to right, $impact-color 0%, #fee140 100%);
+                }
+            }
+        }
+    }
+
+    .pan-list {
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+
+        ul {
+            display: flex;
+
+            li {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                color: #fff;
+                font-size: 12px;
+                padding: 8px;
+                margin-right: 10px;
+
+                svg {
+                    height: 15px;
+                    width: 15px;
+                    margin-right: 5px;
+                }
+            }
+
+            li:nth-child(n+2) {
+                position: relative;
+
+                &::before {
+                    content: '>';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: -10px;
+                    color: #fff;
+                    display: block;
+                    height: max-content;
+                    width: max-content;
+                    margin: auto;
                 }
             }
         }

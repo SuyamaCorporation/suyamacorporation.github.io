@@ -154,6 +154,7 @@ main .on-mobile {
 }
 
 main .page-title {
+  position: relative;
   padding: 2vw 0;
   background-color: #f8f8f8;
   background-image: repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 14px);
@@ -174,6 +175,60 @@ main .page-title h1 span::after {
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+main .pan-list {
+  left: 0;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+main .pan-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .pan-list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+main .pan-list ul li svg {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+main .pan-list ul li:nth-child(n+2) {
+  position: relative;
+}
+
+main .pan-list ul li:nth-child(n+2)::before {
+  content: '>';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  color: #fff;
+  display: block;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
 }
 
 main .guide {
