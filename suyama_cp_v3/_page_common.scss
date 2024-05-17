@@ -27,8 +27,31 @@ main.common {
             }
 
             h3 {
-                font-size: calc(14px + 0.4vw) !important;
+                font-size: calc(14px + 0.2vw) !important;
                 margin: 15px 0px;
+            }
+
+            .bg-1 {
+                position: relative;
+                padding: 10px 0px;
+                padding-left: 1em;
+                margin: 1em 0;
+                height: max-content;
+                width: 100%;
+                background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+                background-clip: padding-box;
+                background-size: 4px 4px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 4px;
+                    height: 100%;
+                    display: block;
+                    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+                }
             }
 
             p {
@@ -44,6 +67,7 @@ main.common {
                     font-size: calc(12px + 0.2vw) !important;
                 }
             }
+
         }
     }
 }

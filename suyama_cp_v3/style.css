@@ -2099,7 +2099,7 @@ main.support section.support .container .support .right-container .item.price .b
     padding: calc(25px + 5vh) 0 !important;
   }
   main section.contact h1 {
-    font-size: calc(16px + 0.4vw) !important;
+    font-size: calc(16px + 0.2vw) !important;
   }
   main section.nav .view-more {
     width: 100%;
@@ -2862,8 +2862,34 @@ main.common section.common .container h2 {
 }
 
 main.common section.common .container h3 {
-  font-size: calc(14px + 0.4vw) !important;
+  font-size: calc(14px + 0.2vw) !important;
   margin: 15px 0px;
+}
+
+main.common section.common .container .bg-1 {
+  position: relative;
+  padding: 10px 0px;
+  padding-left: 1em;
+  margin: 1em 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  background: linear-gradient(-45deg, transparent 25%, var(--color_gray) 25%, var(--color_gray) 50%, transparent 50%, transparent 75%, var(--color_gray) 75%, var(--color_gray));
+  background-clip: padding-box;
+  background-size: 4px 4px;
+}
+
+main.common section.common .container .bg-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed6ea0), to(#ec8c69));
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
 }
 
 main.common section.common .container p {
