@@ -193,6 +193,8 @@ main .pan-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .pan-list ul li {
@@ -207,6 +209,9 @@ main .pan-list ul li {
   font-size: 12px;
   padding: 8px;
   margin-right: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 main .pan-list ul li svg {
@@ -967,9 +972,7 @@ main section.support .container .support .right-container .tag span {
 
 main section.support .container .support .view-more.on-mobile {
   margin-top: 25px;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: none;
 }
 
 main section.flow .container h1 {

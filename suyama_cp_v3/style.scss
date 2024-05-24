@@ -178,6 +178,7 @@ main {
 
         ul {
             display: flex;
+            flex-wrap: wrap;
 
             li {
                 display: flex;
@@ -187,6 +188,7 @@ main {
                 font-size: 12px;
                 padding: 8px;
                 margin-right: 10px;
+                width: max-content;
 
                 svg {
                     height: 15px;
@@ -865,7 +867,7 @@ main {
 
                 .view-more.on-mobile {
                     margin-top: 25px;
-                    display: flex !important;
+                    display: none;
                 }
             }
         }
