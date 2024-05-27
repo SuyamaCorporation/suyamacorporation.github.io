@@ -63,6 +63,7 @@ main .container .guide .scroll-nav {
   position: relative;
   width: 2px;
   height: 10vw;
+  max-height: 75px;
   background-color: #eaeaea;
   margin: 5vw auto;
 }
