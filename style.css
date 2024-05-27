@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Noto Sans JP", sans-serif;
+  font-size: calc(12px + 0.21vw);
 }
 
 .container {
@@ -23,21 +24,35 @@ main {
 
 main .container {
   position: relative;
+  padding-top: 5vw;
 }
 
-main .container .guide {
-  position: fixed;
-  top: 15%;
-  left: 15%;
-  margin: auto;
-  width: 50vw;
-  max-width: 600px;
+main .container .guide span {
+  font-weight: 900;
 }
 
 main .container .guide h1 {
   font-size: calc(24px + 2vw);
   font-weight: 900;
   margin-bottom: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-wrap: nowrap;
+}
+
+main .container .guide h1::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #333;
+  margin-left: 2vw;
 }
 
 main .container .guide p {
@@ -47,10 +62,9 @@ main .container .guide p {
 main .container .guide .scroll-nav {
   position: relative;
   width: 2px;
-  height: 100px;
-  margin: auto;
+  height: 10vw;
   background-color: #eaeaea;
-  margin-top: 100px;
+  margin: 5vw auto;
 }
 
 main .container .guide .scroll-nav::after {
@@ -82,14 +96,16 @@ main .container .mock-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 main .container .mock-list a {
   display: block;
-  width: 100%;
+  width: 45%;
+  min-width: 320px;
   text-decoration: none;
   color: #111;
   border: 1px solid #eaeaea;

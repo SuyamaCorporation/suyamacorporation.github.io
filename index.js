@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+
     var projectElements = document.querySelectorAll('.project');
     projectElements.forEach(function (element) {
         TweenMax.set(element, { rotationY: 0, rotationX: 0, rotationZ: 0, transformPerspective: 1000 });

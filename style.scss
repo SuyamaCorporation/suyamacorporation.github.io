@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Noto Sans JP", sans-serif;
+    font-size: calc(12px + 0.21vw);
 }
 
 .container {
@@ -26,19 +27,30 @@ main {
 
     .container {
         position: relative;
+        padding-top: 5vw;
 
         .guide {
-            position: fixed;
-            top: 15%;
-            left: 15%;
-            margin: auto;
-            width: 50vw;
-            max-width: 600px;
+            span {
+                font-weight: 900;
+            }
 
             h1 {
                 font-size: calc(24px + 2vw);
                 font-weight: 900;
                 margin-bottom: 5vw;
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                text-wrap: nowrap;
+
+                &::after {
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    display: block;
+                    background-color: #333;
+                    margin-left: 2vw;
+                }
             }
 
             p {
@@ -48,10 +60,9 @@ main {
             .scroll-nav {
                 position: relative;
                 width: 2px;
-                height: 100px;
-                margin: auto;
+                height: 10vw;
                 background-color: #eaeaea;
-                margin-top: 100px;
+                margin: 5vw auto;
 
                 &::after {
                     content: '';
@@ -75,13 +86,14 @@ main {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            padding-left: 50%;
+            justify-content: space-around;
             padding-top: 50px;
             padding-bottom: 50px;
 
             a {
                 display: block;
-                width: 100%;
+                width: 45%;
+                min-width: 320px;
                 text-decoration: none;
                 color: #111;
                 border: 1px solid #eaeaea;

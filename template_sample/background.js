@@ -2,6 +2,7 @@
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // カメラの位置を調整
@@ -57,20 +58,8 @@ function animate() {
 animate();
 
 // ウィンドウリサイズ対応
-function adjustCanvasSize() {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const pixelRatio = window.devicePixelRatio || 1;
-
-    renderer.setSize(width * pixelRatio, height * pixelRatio, false);
-    renderer.domElement.style.width = `${width}px`;
-    renderer.domElement.style.height = `${height}px`;
-
-    camera.aspect = width / height;
+window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-}
-
-window.addEventListener('resize', adjustCanvasSize);
-
-// 初期化時のサイズ調整
-adjustCanvasSize();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
