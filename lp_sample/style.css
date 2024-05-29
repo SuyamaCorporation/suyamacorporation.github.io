@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: calc(12px + 0.21vw);
+  font-family: "Montserrat", "Noto Sans JP", sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+  max-width: 1200px;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 5px #eaeaea;
+          box-shadow: 0px 0px 5px #eaeaea;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 9;
+}
+
+header .container {
+  max-width: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+header .container .logo {
+  font-weight: 900;
+  font-size: calc(24px + 0.4vw);
+}
+
+header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container ul li {
+  list-style: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main {
+  padding-top: 5vw;
+}
+
+main section.top {
+  position: relative;
+  background-color: #056dfa;
+  background-image: url("./bg_noise.webp");
+  background-blend-mode: saturation;
+  mix-blend-mode: soft-light;
+  min-height: 50vh;
+  padding: 10vw 0;
+}
+
+main section.top .container {
+  position: relative;
+  z-index: 2;
+}
+
+main section.top .container h1 {
+  font-size: calc(24px + 2.5vw);
+  font-weight: 400;
+  padding: 10px;
+  -webkit-box-shadow: 15px 15px 0px #e5ff19;
+          box-shadow: 15px 15px 0px #e5ff19;
+  margin-bottom: 5vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fff;
+}
+
+main section.top .container h1 span {
+  font-size: calc(24px + 5vw);
+  color: #fff;
+}
+
+main section.top .container p {
+  padding: 10px;
+  font-size: calc(16px + 2.5vw);
+  font-weight: 900;
+  -webkit-box-shadow: 15px 15px 0px #e5ff19;
+          box-shadow: 15px 15px 0px #e5ff19;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fff;
+}
+
+main section.top .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0665e9;
+  width: 50vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+main section.service {
+  padding: 10vw 0;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+main section.service h1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: calc(24px + 4vw);
+  font-weight: 400;
+  margin-bottom: 2.5vw;
+}
+
+main section.service .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+main section.service .wrapper .service {
+  position: relative;
+  border: 1px solid #eaeaea;
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5vw;
+  padding-bottom: 4em;
+}
+
+main section.service .wrapper .service .right {
+  padding: 2em;
+}
+
+main section.service .wrapper .service .right span {
+  display: block;
+  font-weight: 600;
+  color: #0038B5;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+
+main section.service .wrapper .service .right h2 {
+  font-size: calc(22px + 0.4vw);
+  margin-bottom: 1.5vw;
+  width: 100%;
+  text-align: center;
+}
+
+main section.service .wrapper .service .right p {
+  line-height: 2;
+  font-weight: 500;
+}
+
+main section.service .wrapper .service .right p strong {
+  color: #0038B5;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+main section.service .wrapper .view-more {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  width: 100%;
+  margin-top: 2.5vw;
+}
+
+main section.service .wrapper .view-more a {
+  position: relative;
+  display: block;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: 1px solid #74ebd5;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  text-decoration: none;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+main section.news {
+  padding: 10vw 0;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+main section.news .container span.sub-text {
+  font-weight: 600;
+}
+
+main section.news .container h1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: calc(24px + 4vw);
+  font-weight: 400;
+  margin-bottom: 2.5vw;
+}
+
+main section.news .container h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#74ebd5), to(#9face6));
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  margin-left: 2vw;
+}
+
+main section.news .container .post-list .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main section.news .container .post-list .post .eye-catch {
+  width: 25%;
+  background-color: #eaeaea;
+  aspect-ratio: 16/10;
+}
+
+main section.news .container .post-list .post .post-body {
+  width: 75%;
+  padding: 2em;
+  position: relative;
+}
+
+main section.news .container .post-list .post .post-body .post-info {
+  position: absolute;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  top: 0;
+  left: 2em;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+main section.news .container .post-list .post .post-body .post-title {
+  font-weight: 600;
+  font-size: calc(16px + 0.4vw);
+  margin: 1vw 0;
+}
+
+main section.news .container .post-list .post .post-body .category {
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.news .container .post-list .post .post-body .category span {
+  display: block;
+  padding: 10px;
+  background-color: #eaeaea;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+main section.news .container .view-more {
+  width: 100%;
+  margin-top: 5vw;
+}
+
+main section.news .container .view-more a {
+  position: relative;
+  display: block;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: 1px solid #74ebd5;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  text-decoration: none;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+main section.contact {
+  padding: 5vw 0;
+  background-image: linear-gradient(50deg, #0038B5 10%, #0099C7, #0038B5 90%);
+  background-size: 200% 200%;
+  -webkit-animation: bggrad 20s linear infinite;
+          animation: bggrad 20s linear infinite;
+}
+
+main section.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.contact .container * {
+  color: #fff;
+}
+
+main section.contact .container .left {
+  width: 50%;
+  min-width: 350px;
+}
+
+main section.contact .container .left h1 {
+  font-size: calc(24px + 4vw);
+  font-weight: 400;
+  margin-bottom: 2.5vw;
+}
+
+main section.contact .container .right {
+  width: 50%;
+  min-width: 350px;
+}
+
+main section.contact .container .right a {
+  display: block;
+  width: 100%;
+  padding: 2em;
+  border: 1px solid #fff;
+  margin-bottom: 2.5vw;
+  font-weight: 600;
+  font-size: calc(16px + 0.4vw);
+  text-decoration: none;
+}
+
+main section.contact .container .right a span {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: 300;
+  margin-left: 2.5vw;
+}
+
+@-webkit-keyframes bggrad {
+  0% {
+    background-image: linear-gradient(50deg, #0038B5 10%, transparent 30%, #0099C7 50%, #0038B5 90%), linear-gradient(0, #0038B5 10%, #0099C7 50%);
+    background-position: 50% 100%;
+  }
+  20% {
+    background-image: linear-gradient(50deg, #0099C7 0%, transparent 30%, #0038B5 50%, transparent 70% #0099C7 90%), linear-gradient(-50deg, transparent 10%, transparent 90%);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-image: linear-gradient(50deg, #0099C7 0%, transparent 30%, #0038B5 50%, transparent 70% #0099C7 90%), linear-gradient(0, transparent 10%, rgba(0, 56, 181, 0.5) 50%, transparent 90%);
+    background-position: 50% 100%;
+  }
+  75% {
+    background-image: linear-gradient(50deg, #0099C7 0%, transparent 30%, #0038B5 50%, transparent 70% #0099C7 90%), linear-gradient(-50deg, transparent 10%, transparent 90%);
+    background-position: 100% 50%;
+  }
+  100% {
+    background-image: linear-gradient(50deg, #0038B5 10%, transparent 30%, #0099C7 50%, #0038B5 90%), linear-gradient(0, #0038B5 10%, #0099C7 50%);
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes bggrad {
+  0% {
+    background-image: linear-gradient(50deg, #0038B5 10%, transparent 30%, #0099C7 50%, #0038B5 90%), linear-gradient(0, #0038B5 10%, #0099C7 50%);
+    background-position: 50% 100%;
+  }
+  20% {
+    background-image: linear-gradient(50deg, #0099C7 0%, transparent 30%, #0038B5 50%, transparent 70% #0099C7 90%), linear-gradient(-50deg, transparent 10%, transparent 90%);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-image: linear-gradient(50deg, #0099C7 0%, transparent 30%, #0038B5 50%, transparent 70% #0099C7 90%), linear-gradient(0, transparent 10%, rgba(0, 56, 181, 0.5) 50%, transparent 90%);
+    background-position: 50% 100%;
+  }
+  75% {
+    background-image: linear-gradient(50deg, #0099C7 0%, transparent 30%, #0038B5 50%, transparent 70% #0099C7 90%), linear-gradient(-50deg, transparent 10%, transparent 90%);
+    background-position: 100% 50%;
+  }
+  100% {
+    background-image: linear-gradient(50deg, #0038B5 10%, transparent 30%, #0099C7 50%, #0038B5 90%), linear-gradient(0, #0038B5 10%, #0099C7 50%);
+    background-position: 50% 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
