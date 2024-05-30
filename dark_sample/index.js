@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             duration: 0.5,
             opacity: 1,
             ease: "power1.inOut"
-        }) // 0.5秒遅延して開始
+        })
 
         // 3. headerをやや上からフェードインする形で表示
         .to("header", {
