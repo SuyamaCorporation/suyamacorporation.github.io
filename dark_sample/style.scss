@@ -226,6 +226,7 @@ main {
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
+                    aspect-ratio: 16/9;
 
                     @media (max-width: $middle) {
                         aspect-ratio: unset;

@@ -256,6 +256,7 @@ main section.about .container .right .point {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  aspect-ratio: 16/9;
 }
 
 @media (max-width: 1300px) {
