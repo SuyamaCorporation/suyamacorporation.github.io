@@ -7,9 +7,9 @@
 }
 
 .container {
-    width: 90vw;
+    width: 100%;
     margin: auto;
-    max-width: 1200px;
+    padding: 0 10vw;
 
 }
 
@@ -110,7 +110,7 @@ main {
                         img {
                             width: 100%;
                             aspect-ratio: 16/9;
-                            object-fit: contain;
+                            object-fit: cover;
                         }
                     }
                 }

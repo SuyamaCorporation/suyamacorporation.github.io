@@ -8,9 +8,9 @@
 }
 
 .container {
-  width: 90vw;
+  width: 100%;
   margin: auto;
-  max-width: 1200px;
+  padding: 0 10vw;
 }
 
 header .container .site-title {
@@ -126,8 +126,8 @@ main .container .mock-list a .mock .image-wrapper {
 main .container .mock-list a .mock .image-wrapper img {
   width: 100%;
   aspect-ratio: 16/9;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main .container .mock-list a .mock-info {
