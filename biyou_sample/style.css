@@ -152,8 +152,8 @@ main section.top .container .head-line h1 {
 main section.top .container .head-line h1 span.text-wrapper {
   font-size: calc(24px + 0.8vw);
   font-weight: 400;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
   opacity: 0;
 }
 
