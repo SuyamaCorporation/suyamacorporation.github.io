@@ -1,0 +1,103 @@
+main.page.single {
+    section.single {
+        .container {
+            max-width: 850px;
+            .image-wrapper {
+                width: 100%;
+                img {
+                    width: 100%;
+                    aspect-ratio: 16/10;
+                    object-fit: cover;
+                }
+            }
+            h1 {
+                font-size: calc(24px + 0.4vw);
+                font-family: "Marcellus", "Shippori Mincho", sans-serif;
+                padding: 50px 0px;
+                border-bottom: 1px solid $sub-color;
+                margin-bottom: 50px;
+                font-weight: 400;
+                @media (max-width: $small) {
+                    padding: 25px 0px;
+                    margin-bottom: 25px;
+                    font-size: 22px;
+                }
+            }
+            .post-info {
+                span.category {
+                    display: inline-block;
+                    color: #fff;
+                    background-color: $theme-color;
+                    padding: .5em;
+                    font-size: 14px;
+                }
+                span.date {
+                    font-size: 14px;
+                }                
+            }
+            .content {
+                * {
+                    font-size: 16px;
+                    @media (max-width: $small) {
+                        font-size: 14px;;
+                    }
+                }
+                padding: 2em;
+                background-color: #fff;
+                border-radius: 15px;
+                margin-bottom: 50px;
+                @media (max-width: $small) {
+                    padding: 1em;
+                }
+                h2,
+                h3,
+                h4 {
+                    color: $theme-color;
+                    margin-top: 50px;
+                    margin-bottom: 25px;
+                    font-family: "Marcellus", "Shippori Mincho", sans-serif;
+                }
+                h2 {
+                    font-size: calc(16px + 0.4vw);
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    text-wrap: nowrap;
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 1px;
+                        background-color: $theme-color;
+                        display: block;
+                        margin-left: 20px;
+                    }
+                }
+                h3 {
+                    font-size: calc(16px + 0.2vw);
+                }
+                p {
+                    line-height: 2;
+                    margin-top: 25px;
+                }
+                ul,
+                ol {
+                    padding: 1em 2em;
+                }
+                a {
+                    color: #1a0dab;
+                }
+            }
+            .post-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 50px;
+                a {
+                    position: relative;
+                    display: block;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
